@@ -1,0 +1,63 @@
+.about{
+    margin: 80vh auto 0 auto;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about *{
+    margin-bottom: 10px;
+}
+
+.about p{
+    margin-left: 30px;
+}
+
+.about img{
+    border-radius: 50%;
+}
+
+.self{
+    position: relative;
+    right: 0px;
+    transition: all 0.3s ease;
+}
+
+.self:hover{
+    transform: scale(1.1)
+}
+
+.codesmith{
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    transition: all 0.3s ease;
+}
+
+.codesmith:hover{
+    transform: scale(1.1)
+}
+
+.ucr{
+    position: relative;
+    right: 60px;
+    transition: all 0.3s ease;
+}
+
+.ucr:hover{
+    transform: scale(1.2)
+}
+
+.icons{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 200px;
+}
+
+.icons img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}

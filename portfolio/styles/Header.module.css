@@ -1,0 +1,23 @@
+.title{
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.title h1::after{
+    content: '|';
+    animation: blinking 1s infinite;
+}
+
+.title h1{
+    font-size: 36px;
+}
+
+@keyframes blinking{
+    50%{
+        opacity: 0;
+    }
+}
+
+.title p{
+    margin-top: 10px;
+}
