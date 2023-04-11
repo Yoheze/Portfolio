@@ -51,7 +51,7 @@ export default function Header () {
     }, [])
 
     return (
-        <div className={styles.title}>
+        <div className={styles.title} id='header'>
             <h1>{typed}</h1>
             <p>I am a {job} located in the Greater Los Angeles Area</p>
         </div>

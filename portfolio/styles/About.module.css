@@ -15,7 +15,12 @@
 }
 
 .about img{
-    border-radius: 50%;
+    border-radius: 30%;
+}
+
+.images p{
+    position: relative;
+    right: 30px;
 }
 
 .self{
@@ -54,10 +59,41 @@
     width: 500px;
     height: 500px;
     left: 200px;
+    animation: spin 8s linear infinite;
+    transform-origin: 0 0;
 }
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 .icons img{
     width: 50px;
     height: 50px;
     position: relative;
+    animation: reverseSpin 8s linear infinite;
+}
+
+@keyframes reverseSpin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.technologies{
+    position: relative;
+    bottom: 200px;
+}
+
+.technologies p{
+    line-height: 24px;
 }

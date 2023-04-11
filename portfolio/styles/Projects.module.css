@@ -1,0 +1,19 @@
+.projects *{
+    margin-bottom: 10px;
+}
+
+.projects{
+    width: 60vw;
+    margin: 80vh auto 0 auto;
+}
+
+.projects h3{
+    margin-top: 20px;
+}
+
+.game{
+    width: 60vw;
+    height: 500px;
+    border: white 3px solid;
+    border-radius: 10%;
+}

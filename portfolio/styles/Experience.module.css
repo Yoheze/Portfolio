@@ -1,0 +1,31 @@
+.projects *{
+    margin-bottom: 10px;
+}
+
+.projects{
+    margin: 60vh auto 0 auto;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.projects p{
+    line-height: 24px;
+}
+
+.reactype{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.appImage{
+    margin-top: 50px;
+}
+
+.webpage{
+    border: 3px solid black;
+    border-radius: 10px;
+}
