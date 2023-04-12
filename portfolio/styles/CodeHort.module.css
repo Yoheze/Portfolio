@@ -1,0 +1,75 @@
+.root{
+    --random-num: 0deg;
+    height: 80vh;
+    width: 30vw;
+    position: relative;
+}
+
+.wheel{
+    height: 300px;
+    width: 300px;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.run_animation{
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(var(--random-num))
+    }
+}
+
+.box{
+    position: absolute;
+    overflow: hidden;
+    height: 50%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    transform-origin: 0% 100%;
+}
+
+.big_box{
+    height: 100%;
+    width: 100%;
+}
+
+.twoBoxes{
+    height: 50%;
+    width: 50%;
+}
+
+.remove_skew{
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    padding-top: 5%;
+    transform: rotate(90deg);
+    color: white;
+}
+
+.arrow_down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    position: absolute;
+    left: 134px;
+    z-index: 3;
+}
+
+.spinButton{
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}

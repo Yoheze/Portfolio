@@ -13,7 +13,22 @@
 
 .game{
     width: 60vw;
-    height: 500px;
+    height: 80vh;
     border: white 3px solid;
-    border-radius: 10%;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.background{
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.codehort{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30vh;
 }

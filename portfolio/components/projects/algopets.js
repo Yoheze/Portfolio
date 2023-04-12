@@ -8,6 +8,7 @@ import walkingDog from '@/public/dog_walking.gif';
 import trex from '@/public/trex_idle.gif';
 import walkingTrex from '@/public/trex_walking.gif';
 
+
 function Pet({ visible=true }) {
   // set initial x and y positions to random positions on board
   const [petXPosition, setPetXPosition] = useState(Math.floor(Math.random() * 91));
