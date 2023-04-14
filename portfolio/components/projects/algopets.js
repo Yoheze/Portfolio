@@ -11,8 +11,8 @@ import walkingTrex from '@/public/trex_walking.gif';
 
 function Pet({ visible=true }) {
   // set initial x and y positions to random positions on board
-  const [petXPosition, setPetXPosition] = useState(Math.floor(Math.random() * 91));
-  const [petYPosition, setPetYPosition] = useState(Math.floor(Math.random() * 39) + 36);
+  const [petXPosition, setPetXPosition] = useState(50);
+  const [petYPosition, setPetYPosition] = useState(50);
   const [petScale, setPetScale] = useState(100);
   const [petMoveState, setPetMoveState] = useState(false);
   const [flipPet, setFlipPet] = useState(false);

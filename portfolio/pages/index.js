@@ -6,6 +6,7 @@ import Projects from '@/components/projects.js'
 import Footer from '@/components/footer.js'
 
 export default function Home() {
+
   return (
     <>
       <NavBar/>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import styles from '@/styles/CodeHort.module.css'
 
 export default function App () {
@@ -7,6 +7,13 @@ export default function App () {
     const [animationClass, setAnimationClass] = React.useState('')
     const [person, setPerson] = React.useState('')
     const rootRef = React.useRef(null);
+    const audioRef = useRef(null);
+
+  const playSound = () => {
+        if (audioRef.current) {
+            audioRef.current.play();
+        }
+    };
 
     React.useEffect(()=>{
         if (rootRef.current) {
@@ -63,8 +70,10 @@ export default function App () {
                 setAnimationClass(styles.run_animation)
                 const randomNumber = Math.floor(Math.random()*360)
                 setRandomNum(randomNumber);
+                playSound();
             }} className={styles.spinButton}>Spin Wheel!</button>
             <p>{person}</p>
+            <audio ref={audioRef} src="/client_assets_wheel_sfx.mp3" />
         </div>
     )
 }

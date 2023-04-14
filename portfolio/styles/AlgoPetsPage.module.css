@@ -1,0 +1,44 @@
+.page *{
+    margin-bottom: 10px;
+}
+
+.page{
+    width: 60vw;
+    margin: 10vh auto 0 auto;
+}
+
+.page h1, .page h3{
+    text-align: center;
+}
+
+.page h3{
+    font-weight: 400;
+}
+
+.page h4{
+    margin-top: 30px;
+}
+
+.game{
+    width: 60vw;
+    height: 80vh;
+    border: white 3px solid;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.background{
+    width: 60vw;
+    height: 80vh;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.narrative{
+    line-height: 24px;
+}
+
+.tech{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}

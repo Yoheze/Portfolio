@@ -35,11 +35,11 @@ export default function Experience () {
             </ul>
         </div>
         <div className={styles.reactype}>
-            <Image src={ReacType_Logo} width={200} height={200}/>
-            <Image src={ReacType_Splash} width={500} className={styles.webpage}/>
+            <Image src={ReacType_Logo} width={200} height={200} alt='reactype logo'/>
+            <Image src={ReacType_Splash} width={500} className={styles.webpage} alt='reactype splash page screenshot'/>
         </div>
         <div className={styles.appImage}>
-            <Image src={ReacType_App} width={500} className={styles.webpage}/>
+            <Image src={ReacType_App} width={500} className={styles.webpage} alt='screenshot of reactype app'/>
         </div>
         <div>
             <h3>My team's contributions:</h3>

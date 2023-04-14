@@ -1,0 +1,15 @@
+.codehort *{
+    margin-bottom: 10px;
+}
+
+.codehort{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    margin: 10vh auto 0 auto;
+}
+
+.narrative{
+    line-height: 24px;
+    margin-bottom: 20px;
+}

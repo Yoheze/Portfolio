@@ -1,7 +1,7 @@
 .petStyle {
     position: relative;
-    /* top: 50%;
-    left: 50%; */
+    top: 50%;
+    left: 50%;
     height: 100px;
     width: 100px;
     z-Index: 2;
@@ -12,32 +12,6 @@
     transform: scaleX(-1);
 }
 
-.petName {
-    z-index: 99;
-    position: relative;
-    margin: 0 0 5px auto;
-    padding: 5px;
-    text-align: center;
-    width: fit-content;
-    border-radius: 5px;
-    opacity: 0;
-    background-color:white;
-}
-
 .petStyle:hover .petName {
     opacity: 1;
-}
-
-.petName:before {
-    z-index: 98;
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 6px solid #fff;
-    border-right: 3px solid transparent;
-    border-top: 3px solid #fff;
-    border-bottom: 5px solid transparent;
-    left: 0px;
-    bottom: -5px;
 }
