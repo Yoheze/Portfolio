@@ -64,6 +64,7 @@ export default function Projects () {
                     </div>
                 </div>
             </div>
+            <p>Note: This entire portfolio site was built using Next.js for the first time.</p>
         </div>
     )
 }

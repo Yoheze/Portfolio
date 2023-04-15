@@ -9,7 +9,7 @@ export default function algoPetsPage () {
     return (
         <>
             <div className={styles.page}>
-                <h1>Algo-Pets: Interactive Algos Game</h1>
+                <h2>Algo-Pets: Interactive Algos Game - Demo</h2>
                 <h3>Click the pet to change pets, move with arrow keys!</h3>
                 <div className={styles.game}>
                     <Image src={BackGround} className={styles.background}/>

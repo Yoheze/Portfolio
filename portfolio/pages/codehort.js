@@ -5,7 +5,7 @@ export default function codeHortPage() {
     return (
     <div className={styles.codehort}>
         <div>
-            <h3>CodeHort: Interactive Participation Tracker</h3>
+            <h3>CodeHort: Interactive Participation Tracker - Demo</h3>
             <CodeHort/>
         </div>
         <div>
@@ -25,6 +25,16 @@ export default function codeHortPage() {
                 <li>Admin/User Interface and Login</li>
                 <li>Database of all students and participation count</li>
                 <li>Admin deleting and adding students</li>
+            </ul>
+            <h4 style={{marginTop: '20px'}}>Tech Stack: </h4>
+            <ul className={styles.tech}>
+                <li>React</li>
+                <li>Node/Express</li>
+                <li>MongoDB</li>
+                <li>Webpack</li>
+                <li>Tailwind</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
             </ul>
             <p>Check out the GitHub repo 👉 <a href='https://github.com/PantlessThundergeese14/codeHort' target='_blank'>here</a> 👈</p>
         </div>

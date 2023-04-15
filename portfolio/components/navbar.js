@@ -10,7 +10,7 @@ export default function NavBar () {
                 <Link to='about' smooth={true} offset={-120} style={{cursor: 'pointer'}}>About</Link>
                 <Link to='experience' smooth={true} style={{cursor: 'pointer'}} offset={-120}>Experience</Link>
                 <Link to='projects' smooth={true} style={{cursor: 'pointer'}} offset={-120}>Projects</Link>
-                <p style={{cursor: 'pointer'}}>Contact</p>
+                <Link to='contact' smooth={true} style={{cursor: 'pointer'}} offset={-120}>Contact</Link>
             </nav>
             <div className={styles.triangle}></div>
         </div>

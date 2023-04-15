@@ -1,6 +1,7 @@
 import styles from '@/styles/About.module.css'
 import React from 'react';
 import Image from 'next/image';
+import { Link } from 'react-scroll'
 import Self from '../public/me.jpg'
 import Codesmith from '../public/codesmith.png'
 import UCR_Logo from '../public/ucr-logo.png'
@@ -25,6 +26,8 @@ import Vite_Logo from '../public/vite-logo.png';
 import Next_Logo from '../public/next.svg'
 
 export default function About () {
+
+    const [displayNarrative, setDisplayNarrative] = React.useState(false)
 
 const imagesArray = [
     <Image src={HTML_Logo} alt="html 5 logo"/>,
@@ -69,6 +72,27 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
         <div className={styles.about} id='about'>
             <div>
                 <h2>1. About Me:</h2>
+                <div className={styles.narrative}>
+                    <h3>My Narrative: </h3>
+                    <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
+                </div>
+                {displayNarrative && <p style={{lineHeight: '24px', margin: '10px 20px 10px 0px' }}>Discovering Python was a life-changing experience that opened the door to a world of possibilities. It felt as if I were assembling puzzle pieces, creating fascinating projects on my computer that I never imagined possible. My natural inclination to study Python in my spare time confirmed that this was the path I wanted to follow
+                <br></br>
+                <br></br>
+                After researching various career options, I found web development to be the most appealing. Despite my father's concern that AI might eventually take over the field, my strict Asian parents were supportive when they saw my dedication. They encouraged me to attend a bootcamp, which led me to conduct extensive research before settling on Codesmith. You can find more info <a href='https://www.codesmith.io/' target='_blank'>here</a>.
+                <br></br>
+                <br></br>
+                Before even being admitted to Codesmith, I had already built a dice game using React and React hooks, useState and useEffect. Despite my initial achievements, I knew that there was still so much more to learn. The rigorous selection process at Codesmith, which included multiple interviews and workshops, taught me valuable skills such as object-oriented programming, recursion, and permutations. It worth noting that many admitted students often have some experience in the field already.
+                <br></br>
+                <br></br>
+                During my time at Codesmith, every single day felt like a new learning opportunity. I quickly learned about Redux, backend development, testing with Jest, and more. After mastering the foundational concepts, we entered project phase where I worked alongside other developers in a timed environment, often being given just two days to create something cool. It was through this experience that I really got to reinforce my understanding of what it meant to be a full stack developer working in a team. My most notable achievement was contributing to an open-source with a team of 4 for a couple months, which you can find more about <Link to='experience' smooth={true} style={{cursor: 'pointer', textDecoration: 'underline'}} offset={-120}>here</Link>.
+                <br></br>
+                <br></br>
+                Looking back, I am amazed at how far I've come on this journey. However, my passion for coding and learning remains strong. I am eager to explore new areas such as machine learning, game development, and creating tools for others. The future is full of exciting opportunities and I can't wait to see what's next!
+                <br></br>
+                <br></br>
+                <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
+                </p>}
                 <h3>🎓 Education:</h3>
                 <h4>University of California - Riverside</h4>
                 <p>- Cum Laude (Top 10%) Biology</p>

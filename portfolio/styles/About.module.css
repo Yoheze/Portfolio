@@ -3,7 +3,6 @@
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 .about *{
@@ -16,6 +15,19 @@
 
 .about img{
     border-radius: 30%;
+}
+
+.about button{
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.narrative{
+    display: flex;
+    gap: 20px;
+    align-items: center;;
 }
 
 .images p{
@@ -59,39 +71,40 @@
     width: 500px;
     height: 500px;
     left: 200px;
-    animation: spin 8s linear infinite;
-    transform-origin: 0 0;
+    top: 300px;
+    /* animation: spin 10s linear infinite;
+    transform-origin: 10px 10px; */
 }
 
 
-@keyframes spin {
+/* @keyframes spin {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
     }
-  }
+  } */
 
 .icons img{
     width: 50px;
     height: 50px;
     position: relative;
-    animation: reverseSpin 8s linear infinite;
+    /* animation: reverseSpin 10s linear infinite; */
 }
 
-@keyframes reverseSpin{
+/* @keyframes reverseSpin{
     0%{
         transform: rotate(0deg);
     }
     100%{
         transform: rotate(-360deg);
     }
-}
+} */
 
 .technologies{
     position: relative;
-    bottom: 200px;
+    top: 200px;
 }
 
 .technologies p{

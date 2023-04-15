@@ -13,3 +13,8 @@
     line-height: 24px;
     margin-bottom: 20px;
 }
+
+.tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,81 @@
+.App *{
+    color: white;
+    font-family: 'arial'
+}
+
+.App{
+    display: flex;
+    gap: 5%;
+}
+
+.Week{
+    border: 3px solid white;
+    height: 70vh;
+    width: 70%;
+    margin: 4% 2%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+
+.today{
+    /* background-color: #827521; */
+    background-color: rgba(130, 117, 33, 0.5);
+    margin-top: 3%;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    width: 13%;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.day{
+    margin-top: 3%;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    width: 13%;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.liftLogo{
+    width: 100%;
+    height: 25%;
+    border-radius: 50%;
+    margin: 20% auto 0 auto;
+}
+
+
+.menu{
+    border: 3px solid white;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    width: 100%
+}
+
+.exercise{
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.day_exercise{
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
