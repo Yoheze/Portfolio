@@ -3,52 +3,33 @@ import React from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll'
 import Self from '@/public/me.jpg'
-import Codesmith from '/codesmith.png'
-import UCR_Logo from '/ucr-logo.png'
-import HTML_Logo from '/html-logo.png';
-import CSS_Logo from '/css-logo.png';
-import JS_Logo from '/javascript-logo.png'
-import React_Logo from '/react-icon.png';
-import Express_Logo from '/express-logo.png';
-import MongoDB_Logo from '/mongodb-logo.png';
-import Redux_Logo from '/redux-logo.png';
-import TS_Logo from '/typescript-logo.png';
-import Git_Logo from '/git-logo.png';
-import GitHub_Logo from '/github-logo.jpg';
-import Websocket_Logo from '/websocket-logo.png';
-import OAuth_Logo from '/oauth2-logo.png';
-import Node_Logo from '/node-logo.png';
-import PostgreSQL_Logo from '/postgresql-logo.png';
-import Webpack_Logo from '/webpack-logo.png';
-import Tailwind_Logo from '/tailwind-logo.png';
-import React_Router_Logo from '/react-router-logo.png';
-import Vite_Logo from '/vite-logo.png';
-import Next_Logo from '/next.svg'
+import Codesmith from '@/public/codesmith.png'
+import UCR_Logo from '@/public/ucr-logo.png'
 
 export default function About () {
 
     const [displayNarrative, setDisplayNarrative] = React.useState(false)
 
 const imagesArray = [
-    <Image src={HTML_Logo} alt="html 5 logo"  key={0}/>,
-    <Image src={CSS_Logo} alt='css 3 logo' key={1}/>,
-    <Image src={JS_Logo} alt='Javascript logo' key={2}/>,
-    <Image src={React_Logo} alt='react logo' key={3}/>,
-    <Image src={Express_Logo} alt='express logo' key={4}/>,
-    <Image src={MongoDB_Logo} alt='mongoDB logo' key={5}/>,
-    <Image src={Redux_Logo} alt="Redux logo" key={6}/>,
-    <Image src={TS_Logo} alt='TypeScript Logo' key={7}/>,
-    <Image src={Git_Logo} alt='git logo' key={8}/>,
-    <Image src={GitHub_Logo} alt='GitHub logo' key={9}/>,
-    <Image src={Websocket_Logo} alt="websocket logo" key={10}/>,
-    <Image src={OAuth_Logo} alt="Oauth 2 Logo" key={11}/>,
-    <Image src={Node_Logo} alt='Node Logo' key={12}/>,
-    <Image src={PostgreSQL_Logo} alt='postgresql logo' key={13}/>,
-    <Image src={Webpack_Logo} alt='webpack logo' key={14}/>,
-    <Image src={Tailwind_Logo} alt='tailwind logo' key={15}/>,
-    <Image src={React_Router_Logo} alt='react router logo' key={16}/>,
-    <Image src={Vite_Logo} alt='vite logo' key={17}/>,
-    <Image src={Next_Logo} alt='next logo' key={18}/>
+    <Image src='/html-logo.png' alt="html 5 logo"  key={0} width={20} height={20}/>,
+    <Image src='/css-logo.png' alt='css 3 logo' key={1} width={20} height={20}/>,
+    <Image src='/javascript-logo.png' alt='Javascript logo' key={2} width={20} height={20}/>,
+    <Image src='/react-icon.png' alt='react logo' key={3} width={20} height={20}/>,
+    <Image src='/express-logo.png' alt='express logo' key={4} width={20} height={20}/>,
+    <Image src='/mongodb-logo.png'alt='mongoDB logo' key={5} width={20} height={20}/>,
+    <Image src='/redux-logo.png' alt="Redux logo" key={6} width={20} height={20}/>,
+    <Image src='/typescript-logo.png' alt='TypeScript Logo' key={7} width={20} height={20}/>,
+    <Image src='/git-logo.png' alt='git logo' key={8} width={20} height={20}/>,
+    <Image src='/github-logo.jpg'alt='GitHub logo' key={9} width={20} height={20}/>,
+    <Image src='/websocket-logo.png' alt="websocket logo" key={10} width={20} height={20}/>,
+    <Image src='/oauth2-logo.png' alt="Oauth 2 Logo" key={11} width={20} height={20}/>,
+    <Image src='/node-logo.png' alt='Node Logo' key={12} width={20} height={20}/>,
+    <Image src='/postgresql-logo.png' alt='postgresql logo' key={13} width={20} height={20}/>,
+    <Image src='/webpack-logo.png' alt='webpack logo' key={14} width={20} height={20}/>,
+    <Image src='/tailwind-logo.png' alt='tailwind logo' key={15} width={20} height={20}/>,
+    <Image src='/react-router-logo.png' alt='react router logo' key={16} width={20} height={20}/>,
+    <Image src='/vite-logo.png' alt='vite logo' key={17} width={20} height={20}/>,
+    <Image src='/next.svg' alt='next logo' key={18} width={20} height={20}/>
 ]
 
 const itemCount = imagesArray.length;
