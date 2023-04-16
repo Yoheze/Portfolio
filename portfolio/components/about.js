@@ -7,7 +7,7 @@ import Codesmith from '@/public/codesmith.png'
 import UCR_Logo from '@/public/ucr-logo.png'
 import HTML_Logo from '@/public/html-logo.png';
 import CSS_Logo from '@/public/css-logo.png';
-import JS_Logo from '@/public/JavaScript-logo.png';
+import JS_Logo from '@/public/javascript-logo.png';
 import React_Logo from '@/public/react-icon.png';
 import Express_Logo from '@/public/express-logo.png';
 import MongoDB_Logo from '@/public/mongodb-logo.png';
