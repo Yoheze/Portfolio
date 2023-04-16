@@ -1,8 +1,0 @@
-{
-    "functions": {
-      "api/mongo-proxy.js": {
-        "runtime": "nodejs14.x"
-      }
-    }
-  }
-  

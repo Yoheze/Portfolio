@@ -13,5 +13,5 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
   ],
-  // Add any other NextAuth options or callbacks as needed
+  secret: process.env.NEXTAUTH_SECRET,
 })
