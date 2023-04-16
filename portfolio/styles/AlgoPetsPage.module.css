@@ -1,14 +1,19 @@
+.cover{
+    opacity: 0.97;
+    width: 100vw;
+    padding: 10vh 20vw;
+    background-color: #463F3A;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: -50px;
+}
+
 .page *{
     margin-bottom: 10px;
 }
 
-.page{
-    width: 60vw;
-    margin: 10vh auto 0 auto;
-}
-
 .page h2, .page h3{
-    text-align: center;
+    margin: 10px;
 }
 
 .page h3{
@@ -36,9 +41,11 @@
 
 .narrative{
     line-height: 24px;
+    width: 60vw;
 }
 
 .tech{
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
+    width: 60vw;
 }

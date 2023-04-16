@@ -5,6 +5,15 @@
 .project_section{
     width: 60vw;
     margin: 80vh auto 0 auto;
+    opacity: 0.97;
+    width: 100vw;
+    background-color: #463F3A;
+}
+
+.background{
+    padding: 30vh 0;
+    margin: 80vh auto 0 auto;
+    width: 60vw;
 }
 
 .project_section h3{
@@ -37,7 +46,8 @@
 }
 
 .proj:hover{
-  background-color: rgb(0,0,77);
+  background-color: #3943B7;
+  box-shadow: 0 0 10px 10px ;
   opacity: 1;
   height: 350px;
   width: 21vw;

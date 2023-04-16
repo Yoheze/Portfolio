@@ -3,11 +3,21 @@
 }
 
 .projects{
-    margin: 60vh auto 0 auto;
+    opacity: 0.97;
+    width: 100vw;
+    background-color: #463F3A;
+}
+
+.grid{
+    margin: 80vh auto 0 auto;
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    padding: 20vh 0;
+}
+
+.projects img{
+    box-shadow: 0 0 10px 10px #3943B7;
 }
 
 .projects p{
@@ -19,6 +29,11 @@
     flex-direction: column;
     align-items: center;
     gap: 3vh;
+}
+
+.reacType_Logo{
+    box-shadow: 0 0 10px 10px #3943B7;
+    border-radius: 50%;
 }
 
 .appImage{

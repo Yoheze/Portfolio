@@ -2,6 +2,11 @@
     margin-bottom: 10px;
 }
 
+.background{
+    background-color: #463F3A;
+    opacity: 0.97
+}
+
 .page{
     width: 60%;
     margin: 5vh 20vw;

@@ -2,11 +2,21 @@
     margin-bottom: 10px;
 }
 
+.background{
+    background-color: #463F3A;
+    position: relative;
+    opacity: 0.97;
+    margin-top: -50px;
+    height: 100vh
+}
+
 .codehort{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 60vw;
-    margin: 10vh auto 0 auto;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50px;
 }
 
 .narrative{

@@ -1,6 +1,10 @@
 .title{
     text-align: center;
-    margin-top: 30vh;
+    background-color: #463F3A;
+    padding: 40vh 0 60vh 0;
+    position: relative;
+    bottom: 50px;
+    opacity: 0.97;
 }
 
 .title h1::after{

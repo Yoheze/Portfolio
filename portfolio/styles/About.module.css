@@ -1,8 +1,15 @@
 .about{
+    opacity: 0.97;
+    width: 100vw;
+    background-color: #463F3A;
+}
+
+.grid{
     margin: 80vh auto 0 auto;
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 20vh 0;
 }
 
 .about *{
@@ -15,6 +22,11 @@
 
 .about img{
     border-radius: 30%;
+}
+
+.about img:hover{
+    box-shadow: 0 0 10px 10px #3943B7;
+    background-color: #3943B7;
 }
 
 .about button{
@@ -37,7 +49,7 @@
 
 .self{
     position: relative;
-    right: 0px;
+    top: 50px;
     transition: all 0.3s ease;
 }
 
@@ -47,7 +59,7 @@
 
 .codesmith{
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
     left: 100px;
     transition: all 0.3s ease;
 }
@@ -59,6 +71,7 @@
 .ucr{
     position: relative;
     right: 60px;
+    top: 50px;
     transition: all 0.3s ease;
 }
 
