@@ -3,27 +3,27 @@ import React from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll'
 import Self from '@/public/me.jpg'
-import Codesmith from '@/public/codesmith.png'
-import UCR_Logo from '@/public/ucr-logo.png'
-import HTML_Logo from '@/public/html-logo.png';
-import CSS_Logo from '@/public/css-logo.png';
-import JS_Logo from '@/public/javascript-logo.png'
-import React_Logo from '@/public/react-icon.png';
-import Express_Logo from '@/public/express-logo.png';
-import MongoDB_Logo from '@/public/mongodb-logo.png';
-import Redux_Logo from '@/public/redux-logo.png';
-import TS_Logo from '@/public/typescript-logo.png';
-import Git_Logo from '@/public/git-logo.png';
-import GitHub_Logo from '@/public/github-logo.jpg';
-import Websocket_Logo from '@/public/websocket-logo.png';
-import OAuth_Logo from '@/public/oauth2-logo.png';
-import Node_Logo from '@/public/node-logo.png';
-import PostgreSQL_Logo from '@/public/postgresql-logo.png';
-import Webpack_Logo from '@/public/webpack-logo.png';
-import Tailwind_Logo from '@/public/tailwind-logo.png';
-import React_Router_Logo from '@/public/react-router-logo.png';
-import Vite_Logo from '@/public/vite-logo.png';
-import Next_Logo from '@/public/next.svg'
+import Codesmith from '/codesmith.png'
+import UCR_Logo from '/ucr-logo.png'
+import HTML_Logo from '/html-logo.png';
+import CSS_Logo from '/css-logo.png';
+import JS_Logo from '/javascript-logo.png'
+import React_Logo from '/react-icon.png';
+import Express_Logo from '/express-logo.png';
+import MongoDB_Logo from '/mongodb-logo.png';
+import Redux_Logo from '/redux-logo.png';
+import TS_Logo from '/typescript-logo.png';
+import Git_Logo from '/git-logo.png';
+import GitHub_Logo from '/github-logo.jpg';
+import Websocket_Logo from '/websocket-logo.png';
+import OAuth_Logo from '/oauth2-logo.png';
+import Node_Logo from '/node-logo.png';
+import PostgreSQL_Logo from '/postgresql-logo.png';
+import Webpack_Logo from '/webpack-logo.png';
+import Tailwind_Logo from '/tailwind-logo.png';
+import React_Router_Logo from '/react-router-logo.png';
+import Vite_Logo from '/vite-logo.png';
+import Next_Logo from '/next.svg'
 
 export default function About () {
 
