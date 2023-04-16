@@ -15,11 +15,11 @@ export default function algoPetsPage () {
                     <h2>Algo-Pets: Interactive Algos Game - Demo</h2>
                     <h3>Click the pet to change pets, move with arrow keys!</h3>
                     <div className={styles.game}>
-                        <Image src={BackGround} className={styles.background}/>
+                        <Image src={BackGround} className={styles.background} alt='background image of computer'/>
                         <AlgoPets/>
                     </div>
                     <h4>Background</h4>
-                    <p className={styles.narrative}>I worked with a team of other developers, and we had 3 days to create a fun project! My team and I listed out project ideas that we all wanted to build out and voted on which ideas we thought were the best. We all had interests in games, and programming so we created a game to reward programmers for studying! Unfortunately I can't get all the features to work on this page, but you can check out the code 👉 <a href='https://github.com/Panda-Pets/Coding-Companion' target='_blank'>here</a> 👈
+                    <p className={styles.narrative}>I worked with a team of other developers, and we had 3 days to create a fun project! My team and I listed out project ideas that we all wanted to build out and voted on which ideas we thought were the best. We all had interests in games, and programming so we created a game to reward programmers for studying! Unfortunately I can&apos;t get all the features to work on this page, but you can check out the code 👉 <a href='https://github.com/Panda-Pets/Coding-Companion' target='_blank'>here</a> 👈
                     </p>
                     <h4>Features: </h4>
                     <ul>

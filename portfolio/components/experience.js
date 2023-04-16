@@ -43,7 +43,7 @@ export default function Experience () {
                 <Image src={ReacType_App} width={500} className={styles.webpage} alt='screenshot of reactype app'/>
             </div>
             <div>
-                <h3>My team's contributions:</h3>
+                <h3>My team&apos;s contributions:</h3>
                 <ul>
                     <li>Oauth 2.0 GitHub and Google Login</li>
                     <li>Webpack and Collaborative Rooms with Redux store updates</li>

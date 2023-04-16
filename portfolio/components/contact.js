@@ -30,7 +30,7 @@ export default function Contact () {
                 setErrorMessage('OAuth Login failed, most likely duplicate email');
             }
         }
-    }, [status]);
+    }, [status, session]);
 
     // Validation functions
     const validateName = (name) => {

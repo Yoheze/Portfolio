@@ -108,7 +108,7 @@ function Pet({ visible=true }) {
     >
       <Image
         src={petMoveState ? petGifPairs[petFileId] : idleGifPairs[petFileId]}
-        alt={petFileId}
+        alt='demo of Algopets game'
         className={flipPet ? styles.walkingLeft : ''}
         style={{
           height: `${petScale}px`,

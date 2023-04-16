@@ -30,25 +30,25 @@ export default function About () {
     const [displayNarrative, setDisplayNarrative] = React.useState(false)
 
 const imagesArray = [
-    <Image src={HTML_Logo} alt="html 5 logo"/>,
-    <Image src={CSS_Logo} alt='css 3 logo'/>,
-    <Image src={JS_Logo} alt='Javascript logo'/>,
-    <Image src={React_Logo} alt='react logo'/>,
-    <Image src={Express_Logo} alt='express logo'/>,
-    <Image src={MongoDB_Logo} alt='mongoDB logo'/>,
-    <Image src={Redux_Logo} alt="Redux logo"/>,
-    <Image src={TS_Logo} alt='TypeScript Logo'/>,
-    <Image src={Git_Logo} alt='git logo'/>,
-    <Image src={GitHub_Logo} alt='GitHub logo'/>,
-    <Image src={Websocket_Logo} alt="websocket logo"/>,
-    <Image src={OAuth_Logo} alt="Oauth 2 Logo"/>,
-    <Image src={Node_Logo} alt='Node Logo'/>,
-    <Image src={PostgreSQL_Logo} alt='postgresql logo'/>,
-    <Image src={Webpack_Logo} alt='webpack logo'/>,
-    <Image src={Tailwind_Logo} alt='tailwind logo'/>,
-    <Image src={React_Router_Logo} alt='react router logo'/>,
-    <Image src={Vite_Logo} alt='vite logo'/>,
-    <Image src={Next_Logo} alt='next logo'/>
+    <Image src={HTML_Logo} alt="html 5 logo"  key={0}/>,
+    <Image src={CSS_Logo} alt='css 3 logo' key={1}/>,
+    <Image src={JS_Logo} alt='Javascript logo' key={2}/>,
+    <Image src={React_Logo} alt='react logo' key={3}/>,
+    <Image src={Express_Logo} alt='express logo' key={4}/>,
+    <Image src={MongoDB_Logo} alt='mongoDB logo' key={5}/>,
+    <Image src={Redux_Logo} alt="Redux logo" key={6}/>,
+    <Image src={TS_Logo} alt='TypeScript Logo' key={7}/>,
+    <Image src={Git_Logo} alt='git logo' key={8}/>,
+    <Image src={GitHub_Logo} alt='GitHub logo' key={9}/>,
+    <Image src={Websocket_Logo} alt="websocket logo" key={10}/>,
+    <Image src={OAuth_Logo} alt="Oauth 2 Logo" key={11}/>,
+    <Image src={Node_Logo} alt='Node Logo' key={12}/>,
+    <Image src={PostgreSQL_Logo} alt='postgresql logo' key={13}/>,
+    <Image src={Webpack_Logo} alt='webpack logo' key={14}/>,
+    <Image src={Tailwind_Logo} alt='tailwind logo' key={15}/>,
+    <Image src={React_Router_Logo} alt='react router logo' key={16}/>,
+    <Image src={Vite_Logo} alt='vite logo' key={17}/>,
+    <Image src={Next_Logo} alt='next logo' key={18}/>
 ]
 
 const itemCount = imagesArray.length;
@@ -64,7 +64,6 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
       top: `${y}%`,
       position: 'absolute',
     },
-    key: index
   });
 });
 
@@ -80,7 +79,7 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     {displayNarrative && <p style={{lineHeight: '24px', margin: '10px 20px 10px 0px' }}>Discovering Python was a life-changing experience that opened the door to a world of possibilities. It felt as if I were assembling puzzle pieces, creating fascinating projects on my computer that I never imagined possible. My natural inclination to study Python in my spare time confirmed that this was the path I wanted to follow
                     <br></br>
                     <br></br>
-                    After researching various career options, I found web development to be the most appealing. Despite my father's concern that AI might eventually take over the field, my strict Asian parents were supportive when they saw my dedication. They encouraged me to attend a bootcamp, which led me to conduct extensive research before settling on Codesmith. You can find more info <a href='https://www.codesmith.io/' target='_blank'>here</a>.
+                    After researching various career options, I found web development to be the most appealing. Despite my father&apos;s concern that AI might eventually take over the field, my strict Asian parents were supportive when they saw my dedication. They encouraged me to attend a bootcamp, which led me to conduct extensive research before settling on Codesmith. You can find more info <a href='https://www.codesmith.io/' target='_blank'>here</a>.
                     <br></br>
                     <br></br>
                     Before even being admitted to Codesmith, I had already built a dice game using React and React hooks, useState and useEffect. Despite my initial achievements, I knew that there was still so much more to learn. The rigorous selection process at Codesmith, which included multiple interviews and workshops, taught me valuable skills such as object-oriented programming, recursion, and permutations. It worth noting that many admitted students often have some experience in the field already.
@@ -89,7 +88,7 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     During my time at Codesmith, every single day felt like a new learning opportunity. I quickly learned about Redux, backend development, testing with Jest, and more. After mastering the foundational concepts, we entered project phase where I worked alongside other developers in a timed environment, often being given just two days to create something cool. It was through this experience that I really got to reinforce my understanding of what it meant to be a full stack developer working in a team. My most notable achievement was contributing to an open-source with a team of 4 for a couple months, which you can find more about <Link to='experience' smooth={true} style={{cursor: 'pointer', textDecoration: 'underline'}} offset={-120}>here</Link>.
                     <br></br>
                     <br></br>
-                    Looking back, I am amazed at how far I've come on this journey. However, my passion for coding and learning remains strong. I am eager to explore new areas such as machine learning, game development, and creating tools for others. The future is full of exciting opportunities and I can't wait to see what's next!
+                    Looking back, I am amazed at how far I&apos;ve come on this journey. However, my passion for coding and learning remains strong. I am eager to explore new areas such as machine learning, game development, and creating tools for others. The future is full of exciting opportunities and I can&apos;t wait to see what&apos;s next!
                     <br></br>
                     <br></br>
                     <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
@@ -113,7 +112,7 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     {imagesArrayWithStyle}
                 </div>
                 <div className={styles.technologies}>
-                    <h3>Technologies I've worked with:</h3>
+                    <h3>Technologies I&apos;ve worked with:</h3>
                     <p>JavaScript (ES6+), React, Express, NoSQL (MongoDB, Mongoose), HTML5, CSS3, Redux, TypeScript, Git/GitHub flow, WebSockets, Authentication (OAuth 2.0), Node, SQL (PostgreSQL), webpack, Tailwind, React Router, Vite, Next</p>
                     <br></br>
                     <h3>Interests:</h3>
