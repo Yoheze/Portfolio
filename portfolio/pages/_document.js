@@ -9,7 +9,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Yohan's Portfolio</title>
+        <title>Yohan&apos;s Portfolio</title>
       </Head>
       <body>
         <Main />
