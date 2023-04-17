@@ -24,6 +24,10 @@
     margin-top: 30px;
 }
 
+.page li{
+    width: 55vw;
+}
+
 .game{
     width: 60vw;
     height: 80vh;

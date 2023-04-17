@@ -23,7 +23,7 @@ export default function LiftLog() {
           <p>I was assigned to work with 3 other engineers to create an app in 2 days! We settled on creating a Workout Journaling app with the focus being on React Drag and Drop! We found the drawing on excalidraw really funny so we literally implemented it as the logo for our actual project. Here are some of the images of what our plan was when it came to executing the project</p>
           <Image src={Plan} className={styles.plan} alt="excalidraw of liftlog&apos;s plan"></Image>
           <p>We also drew out our SQL database:</p>
-          <Image src={Sql} alt="excalidraw of liftlog's sql database"></Image>
+          <Image src={Sql} alt="excalidraw of liftlog's sql database" className={styles.sql}></Image>
           <p>We did get the database to render the menu of exercises to drag, but couldn&apos;t quite get the extensive dynamically populating form to work in 2 days. It was still super fun to work on with 3 other people!</p>
           <h4 style={{marginTop: '20px'}}>Main features: </h4>
           <p>Adopted the React Drag and Drop library to devise an appealing and interactive approach for users to document their exercise diaries</p>

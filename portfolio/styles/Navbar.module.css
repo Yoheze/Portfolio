@@ -33,3 +33,13 @@
     border-right: 25px solid transparent;
     border-bottom: 25px solid transparent;
 }
+
+@media screen and (max-width: 480px) {
+    .navbar{
+        width: 100vw;
+    }
+
+    .triangle {
+        border: 0;
+    }
+}

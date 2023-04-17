@@ -21,6 +21,10 @@
     width: 100%;
 }
 
+.sql{
+    width: 60vw;
+}
+
 .tech{
     text-align: left;
     display: grid;

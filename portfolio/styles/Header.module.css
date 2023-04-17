@@ -25,3 +25,11 @@
 .title p{
     margin-top: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .title h1, .title p{
+        width: 80vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+}

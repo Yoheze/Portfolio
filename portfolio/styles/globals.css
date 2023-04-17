@@ -24,15 +24,3 @@ input:focus, textarea:focus{
     box-shadow: 0 0 5px 5px #9381FF;
     margin-left: 10px;
 }
-
-.section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; /* Adjust this value to create gaps between sections */
-}
-  
-.transparent-bg {
-    background-color: rgba(255, 255, 255, 0.8); /* Change the alpha value to adjust the transparency */
-}

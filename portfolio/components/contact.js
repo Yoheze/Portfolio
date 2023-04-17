@@ -96,6 +96,8 @@ export default function Contact () {
 
     const check =  errorMessage==='form sent successfully' ? <p style={{color: 'lightgreen'}}>{errorMessage}</p> : <p style={{color: 'red'}}>{errorMessage}</p>
 
+    const messageLimit = message.length>500 ? <p style={{color: 'red'}}>{message.length}/500</p> : <p>{message.length}/500</p>
+
     return (
         <div className={styles.contact} id='contact'>
             <h2>Contact me!</h2>
@@ -104,6 +106,7 @@ export default function Contact () {
                 <label>Email: <input onChange={(e) => setEmail(e.target.value)} required></input></label>
                 <div className={styles.textarea}>
                     <label>Send me a message!: </label><textarea rows="4" cols="50" onChange={(e) => setMessage(e.target.value)}></textarea>
+                    {messageLimit}
                 </div>
                 <button type='submit'>Submit!</button>
                 {check}
