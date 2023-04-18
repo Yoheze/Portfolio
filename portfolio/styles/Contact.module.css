@@ -72,7 +72,8 @@
 
 @media screen and (max-width: 1250px) {
     .form{
-        padding-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .form input{
