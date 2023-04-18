@@ -7,10 +7,18 @@
 body{
     margin: 0;
     background-image: url('../public/javascript-computer.jpg');
-    background-size: cover;
+    background-size: 100vw;
     background-position: center center;
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 1250px) {
+    body {
+        background-size: 300vw;
+        background-position: 70% 50%;
+    }
+}
+
 
 h4{
     font-weight: 400;
