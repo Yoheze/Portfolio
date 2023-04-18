@@ -7,7 +7,7 @@
 body{
     margin: 0;
     background-image: url('../public/javascript-computer.jpg');
-    background-size: 100vw;
+    background-size: 120vw;
     background-position: center center;
     background-attachment: fixed;
 }
