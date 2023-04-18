@@ -67,12 +67,12 @@
     }
 
     .page h2, .page h3, .narrative, .page li{
-        width: 60vw;
+        width: 80vw;
     }
 
     .tech{
         display: block;
-        width: 60vw;
+        width: 80vw;
     }
 
     .page li{
@@ -85,12 +85,12 @@
     }
 
     .game{
-        width: 60vw;
+        width: 80vw;
         height: 30vh;
     }
     
     .background{
-        width: 60vw;
+        width: 80vw;
         height: 30vh;
     }
 }
