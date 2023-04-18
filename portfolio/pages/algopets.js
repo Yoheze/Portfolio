@@ -3,12 +3,16 @@ import HomeButton from '@/components/homeButton.js'
 import BackGround from '@/public/FieldBackground.jpg'
 import styles from '@/styles/AlgoPetsPage.module.css'
 import Image from 'next/image'
+import Head from 'next/head'
 import Footer from '@/components/footer.js'
 
 export default function algoPetsPage () {
 
     return (
-        <>
+        <>  
+            <Head>
+                <title>AlgoPets Demo</title>
+            </Head>
             <HomeButton/>
             <div className={styles.cover}>
                 <div className={styles.page}>

@@ -48,10 +48,17 @@
     width: 60vw;
 }
 
-.tech{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 60vw;
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    margin-bottom: 20px;
+}
+
+.tech li {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1250px) {

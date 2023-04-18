@@ -8,10 +8,14 @@ import LiftLogDemo from '@/components/projects/liftlog.js';
 import styles from '@/styles/LiftLogPage.module.css'
 import Plan from '@/public/liftlog-plan.png'
 import Sql from '@/public/liftlog-sql.png'
+import Head from 'next/head'
 
 export default function LiftLog() {
   return (
     <div className={styles.background}>
+      <Head>
+          <title>LiftLog Demo</title>
+      </Head>
       <HomeButton/>
       <div className={styles.page}>
         <h2>LiftLog: Online Exercise Logger</h2>

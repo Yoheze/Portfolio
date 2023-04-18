@@ -2,10 +2,14 @@ import CodeHort from '@/components/projects/codehort.js'
 import Footer from '@/components/footer.js'
 import HomeButton from '@/components/homeButton.js'
 import styles from '@/styles/CodeHortPage.module.css'
+import Head from 'next/head'
 
 export default function codeHortPage() {
     return (
     <>  
+        <Head>
+            <title>CodeHort Demo</title>
+        </Head>
         <HomeButton/>
         <div className={styles.background}>
             <div className={styles.codehort}>
