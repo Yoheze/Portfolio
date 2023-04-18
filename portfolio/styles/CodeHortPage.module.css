@@ -27,3 +27,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+@media screen and (max-width: 1250px) {
+    .codehort, .tech{
+        grid-template-columns: 1fr;
+        width: 80vw;
+    }
+
+    .codehort h3{
+        margin-top: 5vh;
+        padding-left: 10vw;
+    }
+
+    .narrative{
+        width: 80vw;
+    }
+
+    .codehort li, .codehort h3{
+        margin-left: -5vw;
+        padding-right: 10vw;
+    }
+}

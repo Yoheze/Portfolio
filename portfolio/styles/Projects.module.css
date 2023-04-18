@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  transition: ease 2s background-color, opacity 2s, width 2s, height 2s;
+  transition: ease 0.3s background-color, opacity 0.3s, width 0.3s, height 0.3s;
   opacity: 0.2;
   height: 350px;
   width: 19vw;
@@ -63,4 +63,32 @@
   justify-content: space-between;
   gap: 10px;
   width: 80%;
+}
+
+@media screen and (max-width: 1250px) {
+    .projects{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1vw;
+    }
+
+    .project_section{
+      width: 80vw;
+      opacity: 0.97;
+      width: 100vw;
+      background-color: #463F3A;
+  }
+
+    .proj {
+      width:60vw;
+      height: 400px;
+    }
+
+    .proj:hover{
+      background-color: #3943B7;
+      box-shadow: 0 0 10px 10px ;
+      opacity: 1;
+      height: 400px;
+      width: 60vw;
+    }
 }

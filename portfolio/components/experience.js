@@ -42,7 +42,7 @@ export default function Experience () {
             <div className={styles.appImage}>
                 <Image src={ReacType_App} width={500} className={styles.webpage} alt='screenshot of reactype app'/>
             </div>
-            <div>
+            <div className={styles.contributions}>
                 <h3>My team&apos;s contributions:</h3>
                 <ul>
                     <li>Oauth 2.0 GitHub and Google Login</li>

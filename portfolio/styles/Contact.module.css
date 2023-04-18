@@ -34,6 +34,10 @@
     color: black;
 }
 
+.form textarea{
+    border: 2px solid black;
+}
+
 .textarea{
     display: flex;
     align-items: center;
@@ -64,4 +68,26 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+    .form{
+        padding-top: 50px;
+    }
+
+    .form input{
+        width: 100%;
+        display: block;
+    }
+
+    .textarea{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .form textarea{
+        width: 90%;
+    }
 }

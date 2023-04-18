@@ -15,7 +15,7 @@ export default function LiftLog() {
       <HomeButton/>
       <div className={styles.page}>
         <h2>LiftLog: Online Exercise Logger</h2>
-        <h3 style={{fontWeight: '400'}}>Demo: Try dragging and dropping</h3>
+        <h3 style={{fontWeight: '400'}}>Demo: Try dragging and dropping, does not work on mobile</h3>
           <DndProvider backend={HTML5Backend}>
               <LiftLogDemo />
           </DndProvider>

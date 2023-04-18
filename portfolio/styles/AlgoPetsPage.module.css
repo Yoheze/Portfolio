@@ -53,3 +53,37 @@
     grid-template-columns: repeat(3, 1fr);
     width: 60vw;
 }
+
+@media screen and (max-width: 1250px) {
+    .cover{
+        padding: 10vh 10vw;
+    }
+
+    .page h2, .page h3, .narrative, .page li{
+        width: 60vw;
+    }
+
+    .tech{
+        display: block;
+        width: 60vw;
+    }
+
+    .page li{
+        margin-left: -5vw;
+    }
+
+    .tech{
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .game{
+        width: 60vw;
+        height: 30vh;
+    }
+    
+    .background{
+        width: 60vw;
+        height: 30vh;
+    }
+}

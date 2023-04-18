@@ -36,7 +36,7 @@ export default function Projects () {
                     </div>
                     <div className={styles.proj}>
                         <h3>CodeHort</h3>
-                        <h4>Interactive Participation Tracker</h4>
+                        <h4 style={{textAlign: 'center'}}>Interactive Participation Tracker</h4>
                         <Image src={CodeHort} alt='codehort icon' style={{margin: '80px auto'}}/>
                         <div className={styles.icons}>
                             <a onClick={()=>{

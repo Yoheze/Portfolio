@@ -1,5 +1,5 @@
 import styles from '@/styles/About.module.css'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll'
 import Self from '@/public/me.jpg'
@@ -9,6 +9,21 @@ import UCR_Logo from '@/public/ucr-logo.png'
 export default function About () {
 
     const [displayNarrative, setDisplayNarrative] = React.useState(false)
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.matchMedia('(max-width: 600px)').matches);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
 const imagesArray = [
     <Image src='/html-logo.png' alt="html 5 logo"  key={0} width={20} height={20}/>,
@@ -84,14 +99,14 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     <p>- Advanced Residency for Software Engineering</p>
                 </div>
                 <div className={styles.images}>
-                    <p>Hover me!</p>
+                    <p>Hover me, tap on mobile!</p>
                     <Image src={Self} alt="image of Yohan Jeon" width={200} height={200} className={styles.self}/>
                     <Image src={Codesmith} alt="Codesmith logo" width={100} height={100} className={styles.codesmith}/>
                     <Image src={UCR_Logo} alt="UCR logo" width={50} height={50} className={styles.ucr}/>
                 </div>
-                <div className={styles.icons}>
+                {!isMobile && <div className={styles.icons}>
                     {imagesArrayWithStyle}
-                </div>
+                </div>}
                 <div className={styles.technologies}>
                     <h3>Technologies I&apos;ve worked with:</h3>
                     <p>JavaScript (ES6+), React, Express, NoSQL (MongoDB, Mongoose), HTML5, CSS3, Redux, TypeScript, Git/GitHub flow, WebSockets, Authentication (OAuth 2.0), Node, SQL (PostgreSQL), webpack, Tailwind, React Router, Vite, Next</p>

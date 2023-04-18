@@ -2,10 +2,11 @@
     opacity: 0.97;
     width: 100vw;
     background-color: #463F3A;
+    padding-bottom: 20vh;
 }
 
 .grid{
-    margin: 80vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,16 +103,40 @@
     line-height: 24px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1250px) {
     .about{
         width: 100vw;
+        overflow: hidden;
+        margin-bottom: 50vh;
+        margin-top: 50vh;
     }
 
-    /* .grid{
-        margin: 80vh auto 0 auto;
-        width: 80vw;
+    .grid {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 20vh 0;
-    } */
+        width: 80vw;
+        padding-right: 10vw;
+        margin: 0 auto;
+    }
+
+    .about p, .about li{
+        width: 80vw;
+        margin: 0;
+        padding: 0 10vw;
+    }
+
+    .icons{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        left: 200px;
+        top: 300px;
+    }
+
+    .codesmith{
+        position: relative;
+        bottom: 50px;
+        left: 20px;
+        transition: all 0.3s ease;
+    }
 }

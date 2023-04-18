@@ -32,4 +32,8 @@
         padding-right: 10vw;
         padding-left: 10vw;
     }
+
+    .background{
+        margin-bottom: 50vh;
+    }
 }

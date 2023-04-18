@@ -44,3 +44,37 @@
     border: 3px solid black;
     border-radius: 10px;
 }
+
+.contributions{
+    margin-left: 5vw
+}
+
+@media screen and (max-width: 1250px){
+    .projects{
+        opacity: 0.97;
+        width: 100vw;
+        background-color: #463F3A;
+        overflow: hidden;
+    }
+    
+    .grid{
+        margin: 20vh auto 0 auto;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20vh 0;
+    }
+
+    .grid *{
+        width: 80vw;
+    }
+
+    .reacType_Logo{
+        width: 30vw;
+        height: 30vh;
+    }
+
+    .contributions, .contributions li{
+        width: 60vw;
+    }
+}

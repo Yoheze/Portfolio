@@ -79,3 +79,13 @@
     margin-left: 3px;
     margin-right: 3px;
 }
+
+@media screen and (max-width: 1250px) {
+    .Week{
+        height: 30vh;
+    }
+
+    .menu{
+        height: 15vh;
+    }
+}

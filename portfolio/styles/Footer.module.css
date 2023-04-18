@@ -41,6 +41,37 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1250px) {
+    .line{
+        width: 0;
+        height: 0;
+        background-color: transparent;
+    }
 
+    .footer{
+        position: fixed;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw;
+        height: 6vh;
+        padding: 1vh 0;
+        background-color: #8A817C;
+    }
+
+    .footer svg{
+        fill: white;
+        margin-bottom: 0;
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .credit{
+        padding: 10px 0 10px 10px;
+        margin-bottom: 7vh;
+        opacity: 0.97;
+        width: 100%;
+        background-color: #463F3A;
+    }
 }
