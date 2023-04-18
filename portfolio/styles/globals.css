@@ -16,6 +16,7 @@ body{
     body {
         background-size: 300vw;
         background-position: 70% 50%;
+        background-attachment: scroll;
     }
 }
 
