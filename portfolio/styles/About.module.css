@@ -140,4 +140,11 @@
         left: 20px;
         transition: all 0.3s ease;
     }
+
+    .ucr{
+        position: relative;
+        right: 60px;
+        top: 50px;
+        transition: all 0.3s ease;
+    }
 }
