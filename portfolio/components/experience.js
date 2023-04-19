@@ -50,7 +50,7 @@ export default function Experience () {
                     <li>Moved all state to Redux ToolKit</li>
                     <li>Docker Containerized Application for Deployment</li>
                     <li>Some UI/UX Changes</li>
-                    <li>TLS Certificationion - HTTPS</li>
+                    <li>TLS Certification - HTTPS</li>
                     <li>Updated Express Routes</li>
                     <li>Added User Ability to Prototype with Tailwind</li>
                     <li>Deployed site on AWS with domain name through CNAME keys in DNS configuration</li>
