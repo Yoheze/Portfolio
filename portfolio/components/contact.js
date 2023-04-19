@@ -27,7 +27,7 @@ export default function Contact () {
               setErrorMessage('form sent successfully')
             }
             catch {
-                setErrorMessage('OAuth Login failed, most likely duplicate email');
+                setErrorMessage('OAuth Login successful!');
             }
         }
     }, [status, session]);
@@ -94,7 +94,7 @@ export default function Contact () {
       }
     };
 
-    const check =  errorMessage==='form sent successfully' ? <p style={{color: 'lightgreen'}}>{errorMessage}</p> : <p style={{color: 'red'}}>{errorMessage}</p>
+    const check =  errorMessage==='form sent successfully' || errorMessage==='OAuth Login successful!' ? <p style={{color: 'lightgreen'}}>{errorMessage}</p> : <p style={{color: 'red'}}>{errorMessage}</p>
 
     const messageLimit = message.length>500 ? <p style={{color: 'red'}}>{message.length}/500</p> : <p>{message.length}/500</p>
 
