@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     background-image: url('../public/javascript-computer.jpg');

@@ -110,6 +110,7 @@ export default function Contact () {
                 </div>
                 <button type='submit'>Submit!</button>
                 {check}
+                <p>Click these buttons below if you want to quickly send me your name and email!</p>
                 <div className={styles.OAuth}>
                     <button onClick={() => signIn('google')}>
                         <p>Sign in with Google</p>
