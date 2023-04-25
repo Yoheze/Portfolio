@@ -65,7 +65,7 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
 
     return (
         <div className={styles.about} id='about'>
-            <h2 style={{marginLeft: '20vw'}}>About Me:</h2>
+            <h2>About Me:</h2>
             <div className={styles.grid}>
                 {!isMobile && <div className={styles.icons}>
                     {imagesArrayWithStyle}

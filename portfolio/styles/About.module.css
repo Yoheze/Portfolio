@@ -7,6 +7,10 @@
     padding-top: 20vh;
 }
 
+.about h2{
+    margin-left: 20vw;
+}
+
 .grid{
     margin: 0 auto;
     width: 60vw;
@@ -96,10 +100,10 @@
     position: relative;
 }
 
-.technologies{
+/* .technologies{
     position: relative;
-    top: 100px;
-}
+    top: px;
+} */
 
 .technologies p{
     line-height: 24px;
@@ -113,12 +117,25 @@
         margin-top: 50vh;
     }
 
+    .about h2{
+        margin-left: 0;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr;
         width: 80vw;
         padding-right: 10vw;
         margin: 0 auto;
+    }
+
+    .about h2{
+        margin-left: 5vw;
+        margin-bottom: -70px;
+    }
+    
+    .narrative{
+        margin-top: 50px;
     }
 
     .about p, .about li{
