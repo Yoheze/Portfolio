@@ -16,7 +16,7 @@ export default function Header () {
         addLetter();
 
         let j = 0;
-        const jobs=['Software Engineer', 'Fullstack Developer', 'Web Developer']
+        const jobs=['Front-end Developer', 'Fullstack Developer', 'Web Developer']
 
         function addOneLetter (i=0, word) {
             setJob(prev=>prev+word[i])

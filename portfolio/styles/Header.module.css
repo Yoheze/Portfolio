@@ -5,6 +5,7 @@
     position: relative;
     bottom: 50px;
     opacity: 0.97;
+    margin-bottom: -50px;
 }
 
 .title h1::after{
@@ -31,9 +32,5 @@
         width: 80vw;
         padding-right: 10vw;
         padding-left: 10vw;
-    }
-
-    .background{
-        margin-bottom: 50vh;
     }
 }

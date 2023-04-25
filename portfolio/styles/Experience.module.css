@@ -9,7 +9,7 @@
 }
 
 .grid{
-    margin: 80vh auto 0 auto;
+    margin: 0 auto;
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,7 +58,7 @@
     }
     
     .grid{
-        margin: 20vh auto 0 auto;
+        margin: 0 auto;
         width: 80vw;
         display: grid;
         grid-template-columns: 1fr;

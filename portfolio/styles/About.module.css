@@ -3,7 +3,6 @@
     width: 100vw;
     background-color: #463F3A;
     padding-bottom: 20vh;
-    margin-top:80vh;
     padding-top: 20vh;
 }
 
@@ -113,12 +112,6 @@
     .about{
         width: 100vw;
         overflow: hidden;
-        margin-bottom: 50vh;
-        margin-top: 50vh;
-    }
-
-    .about h2{
-        margin-left: 0;
     }
 
     .grid {
@@ -131,7 +124,7 @@
 
     .about h2{
         margin-left: 5vw;
-        margin-bottom: -70px;
+        margin-bottom: 20px;
     }
     
     .narrative{

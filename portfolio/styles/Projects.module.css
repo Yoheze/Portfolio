@@ -4,7 +4,7 @@
 
 .project_section{
     width: 60vw;
-    margin: 80vh auto 0 auto;
+    margin: 0 auto;
     opacity: 0.97;
     width: 100vw;
     background-color: #463F3A;
@@ -12,7 +12,7 @@
 
 .background{
     padding: 30vh 0;
-    margin: 80vh auto 0 auto;
+    margin: 0 auto;
     width: 60vw;
 }
 
