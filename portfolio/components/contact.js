@@ -105,7 +105,7 @@ export default function Contact () {
                 <label>Name: <input onChange={(e) => setName(e.target.value)} required placeholder='Your name'></input></label>
                 <label>Email: <input onChange={(e) => setEmail(e.target.value)} required placeholder='Your email'></input></label>
                 <div className={styles.textarea}>
-                    <label>Send me a message!: </label><textarea rows="4" cols="50" onChange={(e) => setMessage(e.target.value)} placeholder="Any message you want to send, limited to 500 letters"></textarea>
+                    <label>Send me a message!: </label><textarea rows="5" cols="75" onChange={(e) => setMessage(e.target.value)} placeholder="Any message you want to send, limited to 500 letters"></textarea>
                     {messageLimit}
                 </div>
                 <button type='submit'>Submit!</button>
