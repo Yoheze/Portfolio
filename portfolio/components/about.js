@@ -65,9 +65,24 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
 
     return (
         <div className={styles.about} id='about'>
+            <h2 style={{marginLeft: '20vw'}}>About Me:</h2>
             <div className={styles.grid}>
-                <div>
-                    <h2>1. About Me:</h2>
+                {!isMobile && <div className={styles.icons}>
+                    {imagesArrayWithStyle}
+                </div>}
+                <div className={styles.technologies}>
+                    <h3>Technologies I&apos;ve worked with:</h3>
+                    <p>JavaScript (ES6+), React, Express, NoSQL (MongoDB, Mongoose), HTML5, CSS3, Redux, TypeScript, Git/GitHub flow, WebSockets, Authentication (OAuth 2.0), Node, SQL (PostgreSQL), webpack, Tailwind, React Router, Vite, Next</p>
+                    <br></br>
+                    <h3>Interests:</h3>
+                    <p>🎼 Musician: Had the opportunity to play at Carnegie Hall in middle school!
+                    <br></br>
+                    ⚗️ Science: Hence my degree in Biology! I love learning about  how everything works!
+                    <br></br>
+                    🎮 Gaming: Would love to see what games other people grew up with
+                    </p>
+                </div>
+                <div style={{marginTop: '100px'}}>
                     <div className={styles.narrative}>
                         <h3>My Narrative: </h3>
                         <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
@@ -98,27 +113,13 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     <h4>Codesmith</h4>
                     <p>- Advanced Residency for Software Engineering</p>
                 </div>
-                <div className={styles.images}>
+                <div className={styles.images} style={{marginTop: '100px'}}>
                     <p>Hover me, tap on mobile!</p>
                     <Image src={Self} alt="image of Yohan Jeon" width={200} height={200} className={styles.self}/>
                     <Image src={Codesmith} alt="Codesmith logo" width={100} height={100} className={styles.codesmith}/>
                     <Image src={UCR_Logo} alt="UCR logo" width={50} height={50} className={styles.ucr}/>
                 </div>
-                {!isMobile && <div className={styles.icons}>
-                    {imagesArrayWithStyle}
-                </div>}
-                <div className={styles.technologies}>
-                    <h3>Technologies I&apos;ve worked with:</h3>
-                    <p>JavaScript (ES6+), React, Express, NoSQL (MongoDB, Mongoose), HTML5, CSS3, Redux, TypeScript, Git/GitHub flow, WebSockets, Authentication (OAuth 2.0), Node, SQL (PostgreSQL), webpack, Tailwind, React Router, Vite, Next</p>
-                    <br></br>
-                    <h3>Interests:</h3>
-                    <p>🎼 Musician: Had the opportunity to play at Carnegie Hall in middle school!
-                    <br></br>
-                    ⚗️ Science: Hence my degree in Biology! I love learning about  how everything works!
-                    <br></br>
-                    🎮 Gaming: Would love to see what games other people grew up with
-                    </p>
-                </div>
+                
             </div>
         </div>
     )

@@ -4,14 +4,14 @@
     background-color: #463F3A;
     padding-bottom: 20vh;
     margin-top:80vh;
+    padding-top: 20vh;
 }
 
 .grid{
-    margin: 10vh auto 0 auto;
+    margin: 0 auto;
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20vh 0;
 }
 
 .about *{
@@ -86,7 +86,8 @@
     width: 500px;
     height: 500px;
     left: 200px;
-    top: 300px;
+    margin-bottom: 100px;
+    top: 200px;
 }
 
 .icons img{
@@ -97,7 +98,7 @@
 
 .technologies{
     position: relative;
-    top: 200px;
+    top: 100px;
 }
 
 .technologies p{
