@@ -1,7 +1,25 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState, useEffect} from 'react'
 import styles from '@/styles/CodeHort.module.css'
+import Image from 'next/image'
+import Codehort_main from '@/public/codehort-main.png'
 
 export default function App () {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setIsMobile(window.matchMedia('(max-width: 600px)').matches);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const [randomNum, setRandomNum] = React.useState(0)
     const [animationClass, setAnimationClass] = React.useState('')
@@ -74,6 +92,8 @@ export default function App () {
             }} className={styles.spinButton}>Spin Wheel!</button>
             <p>{person}</p>
             <audio ref={audioRef} src="/client_assets_wheel_sfx.mp3" />
+            {isMobile ? <Image src={Codehort_main} style={{ width: '300px', height: '100px', margin: '10px'}}/> : <Image src={Codehort_main} style={{ width: '600px', height: '200px', margin: '10px'}}/> }
+            
         </div>
     )
 }

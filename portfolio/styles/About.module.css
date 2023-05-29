@@ -25,7 +25,11 @@
     margin-left: 30px;
 }
 
-.about img{
+.about svg{
+    fill: yellow;
+}
+
+.about img, .about svg{
     border-radius: 30%;
 }
 

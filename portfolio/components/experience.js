@@ -7,7 +7,7 @@ import ReacType_App from '@/public/reactype-webapp.png'
 export default function Experience () {
 
     const reactDND = 'React-DND (Drag and Drop)'
-    const title = 'OSLabs - ReacType | 1.8K GitHub Stars (Open Source)'
+    const title = 'OSLabs - ReacType | 1.9K+ GitHub Stars (Open Source)'
 
     return (
     <div className={styles.projects} id='experience'>
