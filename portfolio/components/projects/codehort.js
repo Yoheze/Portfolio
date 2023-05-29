@@ -92,8 +92,7 @@ export default function App () {
             }} className={styles.spinButton}>Spin Wheel!</button>
             <p>{person}</p>
             <audio ref={audioRef} src="/client_assets_wheel_sfx.mp3" />
-            {isMobile ? <Image src={Codehort_main} style={{ width: '300px', height: '100px', margin: '10px'}}/> : <Image src={Codehort_main} style={{ width: '600px', height: '200px', margin: '10px'}}/> }
-            
+            {isMobile ? <Image src={Codehort_main} style={{ width: '300px', height: '100px', margin: '10px'}} alt='codehort sample image'/> : <Image src={Codehort_main} style={{ width: '600px', height: '200px', margin: '10px'}} alt='codehort sample image'/> }
         </div>
     )
 }
