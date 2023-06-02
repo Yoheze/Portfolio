@@ -89,7 +89,7 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                         <h3>My Narrative: </h3>
                         <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
                     </div>
-                    {displayNarrative && <p style={{lineHeight: '24px', margin: '10px 20px 10px 0px' }}>Discovering Python was a life-changing experience that opened the door to a world of possibilities. It felt as if I were assembling puzzle pieces, creating fascinating projects on my computer that I never imagined possible. My natural inclination to study Python in my spare time confirmed that this was the path I wanted to follow
+                    {displayNarrative && <div className={styles.narrative_text}><p style={{lineHeight: '24px', margin: '10px 20px 10px 0px' }}>Discovering Python was a life-changing experience that opened the door to a world of possibilities. It felt as if I were assembling puzzle pieces, creating fascinating projects on my computer that I never imagined possible. My natural inclination to study Python in my spare time confirmed that this was the path I wanted to follow
                     <br></br>
                     <br></br>
                     After researching various career options, I found web development to be the most appealing. Despite my father&apos;s concern that AI might eventually take over the field, my strict Asian parents were supportive when they saw my dedication. They encouraged me to attend a bootcamp, which led me to conduct extensive research before settling on Codesmith. You can find more info <a href='https://www.codesmith.io/' target='_blank'>here</a>.
@@ -104,16 +104,17 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     Looking back, I am amazed at how far I&apos;ve come on this journey. However, my passion for coding and learning remains strong. I am eager to explore new areas such as machine learning, game development, and creating tools for others. The future is full of exciting opportunities and I can&apos;t wait to see what&apos;s next!
                     <br></br>
                     <br></br>
-                    <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
-                    </p>}
-                    <h3>🎓 Education:</h3>
-                    <h4>University of California - Riverside</h4>
-                    <p>- Cum Laude (Top 10%) Biology</p>
-                    <p>- Relevant Coursework: Introduction to Computing,
-                        <br></br>
-                        Intro to Statistics, Calculus</p>
-                    <h4>Codesmith</h4>
-                    <p>- Advanced Residency for Software Engineering</p>
+                    </p></div>}
+                    <div className={styles.education}>
+                        <h3>🎓 Education:</h3>
+                        <h4>University of California - Riverside</h4>
+                        <p>- Cum Laude (Top 10%) Biology</p>
+                        <p>- Relevant Coursework: Introduction to Computing,
+                            <br></br>
+                            Intro to Statistics, Calculus</p>
+                        <h4>Codesmith</h4>
+                        <p>- Advanced Residency for Software Engineering</p>
+                    </div>
                 </div>
                 <div className={styles.images} style={{marginTop: '100px'}}>
                     <p>Hover me, tap on mobile!</p>

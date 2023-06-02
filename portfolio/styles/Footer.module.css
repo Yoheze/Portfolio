@@ -33,6 +33,7 @@
     right: -300px;
     top: 23px;
     opacity: 0;
+    width: 50px;
     transition: all 0.5s ease;
 }
 

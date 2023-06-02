@@ -92,4 +92,8 @@
     .form textarea{
         width: 90%;
     }
+
+    .form p{
+        text-align: center;
+    }
 }

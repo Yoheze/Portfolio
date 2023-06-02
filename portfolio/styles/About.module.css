@@ -48,7 +48,7 @@
 .narrative{
     display: flex;
     gap: 20px;
-    align-items: center;;
+    align-items: center;
 }
 
 .images p{
@@ -135,10 +135,22 @@
         margin-top: 50px;
     }
 
+    .narrative_text{
+        margin-left: -5vw;
+    }
+
+    .education{
+        margin-left: 5vw;
+    }
+
     .about p, .about li{
         width: 80vw;
         margin: 0;
         padding: 0 10vw;
+    }
+
+    .images{
+        margin-left: 5vw;
     }
 
     .icons{

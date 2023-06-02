@@ -17,7 +17,7 @@ export default function codeHortPage() {
                     <h3>CodeHort: Interactive Participation Tracker - Demo</h3>
                     <CodeHort/>
                 </div>
-                <div>
+                <div className={styles.right}>
                     <h4>Background:</h4>
                     <p className={styles.narrative}>I worked with a team of 3 other people and we had to iterate on a project from another group and were given two
                         days to do so. This was project is really just a participation picker and tracker, and we thought it&apos;d be super interesting to try and make it more interesting! I spent hours trying to create a wheel that dynamically rendered extra slices based on the number of students in the class. I&apos;m really proud of this one and found it constantly being used in my class!
@@ -48,7 +48,7 @@ export default function codeHortPage() {
                     <p>Check out the GitHub repo 👉 <a href='https://github.com/PantlessThundergeese14/codeHort' target='_blank'>here</a> 👈</p>
                 </div>
             </div>
-            
+            <br></br>
             <Footer/>
         </div>
     </>
