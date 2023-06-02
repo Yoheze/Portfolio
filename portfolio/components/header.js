@@ -13,6 +13,7 @@ export default function Header () {
             if (i>=title.length-1) return;
             setTimeout(()=>addLetter(i+1), 100)
         }
+
         addLetter();
 
         let j = 0;
@@ -36,18 +37,13 @@ export default function Header () {
             j++;
         }
 
+        if (job!=='') removeOneLetter(jobs[j])
         changeJob();
 
         setInterval(()=>{
             if (j>=3) j=0;
             changeJob()
         }, 6000)
-    }, [])
-
-    useEffect(()=>{
-
-        
-
     }, [])
 
     return (
