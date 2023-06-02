@@ -7,6 +7,7 @@ export default function Header () {
     const [job, setJob] = useState('')
 
     useEffect(()=>{
+
         const title = 'Hello, My name is Yohan Jeon'
         function addLetter(i=0) {
             setTyped(prev=>prev+title[i])
@@ -37,13 +38,14 @@ export default function Header () {
             j++;
         }
 
-        if (job!=='') removeOneLetter(jobs[j])
         changeJob();
 
-        setInterval(()=>{
+        const intervalId = setInterval(()=>{
             if (j>=3) j=0;
             changeJob()
         }, 6000)
+
+        return () => clearInterval(intervalId)
     }, [])
 
     return (
