@@ -29,6 +29,7 @@ export default function App () {
 
   const playSound = () => {
         if (audioRef.current) {
+            audioRef.current.volume = 0.3;
             audioRef.current.play();
         }
     };

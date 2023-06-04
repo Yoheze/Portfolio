@@ -117,7 +117,6 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
                     </div>
                 </div>
                 <div className={styles.images} style={{marginTop: '100px'}}>
-                    <p>Hover me, tap on mobile!</p>
                     <Image src={Self} alt="image of Yohan Jeon" width={200} height={200} className={styles.self}/>
                     <Image src={Codesmith} alt="Codesmith logo" width={100} height={100} className={styles.codesmith}/>
                     <Image src={UCR_Logo} alt="UCR logo" width={50} height={50} className={styles.ucr}/>

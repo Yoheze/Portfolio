@@ -48,7 +48,6 @@ export default function codeHortPage() {
                     <p>Check out the GitHub repo 👉 <a href='https://github.com/PantlessThundergeese14/codeHort' target='_blank'>here</a> 👈</p>
                 </div>
             </div>
-            <br></br>
             <Footer/>
         </div>
     </>

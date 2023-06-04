@@ -102,13 +102,17 @@ export default function Contact () {
         <div className={styles.contact} id='contact'>
             <h2>Contact me!</h2>
             <form className={styles.form} onSubmit={handleSubmit}>
-                <label>Name: <input onChange={(e) => setName(e.target.value)} required placeholder='Your name'></input></label>
-                <label>Email: <input onChange={(e) => setEmail(e.target.value)} required placeholder='Your email'></input></label>
+              <div className={styles.input_group} style={{paddingTop: '30px'}}>
+                <input onChange={(e) => setName(e.target.value)} required></input><label className={styles.user_label}>Name: </label>
+              </div>
+              <div className={styles.input_group}>
+                <input onChange={(e) => setEmail(e.target.value)} required></input><label className={styles.user_label}>Email: </label>
+              </div>
                 <div className={styles.textarea}>
                     <label>Send me a message!: </label><textarea rows="5" cols="75" onChange={(e) => setMessage(e.target.value)} placeholder="Any message you want to send, limited to 500 letters"></textarea>
                     {messageLimit}
                 </div>
-                <button type='submit'>Submit!</button>
+                <button type='submit' style={{color: 'white'}}>Submit!</button>
                 {check}
                 <p>Click these buttons below if you want to quickly send me your name and email!</p>
                 <div className={styles.OAuth}>
