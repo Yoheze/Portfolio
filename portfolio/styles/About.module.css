@@ -70,10 +70,9 @@
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-20%, -50%);
+    transform: translate(-18%, -50%);
     z-Index: 3;
-    font-size: 20px;
-    color: #9381FF;
+    font-size: 24px;
 }
 
 .images img:hover{
