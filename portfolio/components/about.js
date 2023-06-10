@@ -1,15 +1,15 @@
 import styles from '@/styles/About.module.css'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll'
-import Self from '@/public/me.jpg'
-import Codesmith from '@/public/codesmith.png'
-import UCR_Logo from '@/public/ucr-logo.png'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export default function About () {
 
     const [displayNarrative, setDisplayNarrative] = React.useState(false)
     const [isMobile, setIsMobile] = useState(false);
+    const [dragged, setDragged] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -24,6 +24,26 @@ export default function About () {
         window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    const controls1 = useAnimation();
+    const { ref: ref1, inView: inView1 } = useInView();
+  
+    const controls2 = useAnimation();
+    const { ref: ref2, inView: inView2 } = useInView();
+
+    const constraintsRef = useRef(null);
+  
+    useEffect(() => {
+      if (inView1) {
+        controls1.start('visible');
+      }
+    }, [controls1, inView1]);
+  
+    useEffect(() => {
+      if (inView2) {
+        controls2.start('visible');
+      }
+    }, [controls2, inView2]);
 
 const imagesArray = [
     <Image src='/html-logo.png' alt="html 5 logo"  key={0} width={20} height={20}/>,
@@ -69,59 +89,110 @@ const imagesArrayWithStyle = imagesArray.map((image, index) => {
         <div className={styles.about} id='about'>
             <h2>About Me:</h2>
             <div className={styles.grid}>
-                {!isMobile && <div className={styles.icons}>
-                    {imagesArrayWithStyle}
-                </div>}
-                <div className={styles.technologies}>
-                    <h3>Technologies I&apos;ve worked with:</h3>
-                    <p>JavaScript (ES6+), React, Express, NoSQL (MongoDB, Mongoose), HTML5, CSS3, Redux, TypeScript, Git/GitHub flow, WebSockets, Authentication (OAuth 2.0), Node, SQL (PostgreSQL), webpack, Tailwind, React Router, Vite, Next</p>
-                    <br></br>
-                    <h3>Interests:</h3>
-                    <p>🎼 Musician: Had the opportunity to play at Carnegie Hall in middle school!
-                    <br></br>
-                    ⚗️ Science: Hence my degree in Biology! I love learning about  how everything works!
-                    <br></br>
-                    🎮 Gaming: Would love to see what games other people grew up with
-                    </p>
-                </div>
-                <div style={{marginTop: '100px'}}>
-                    <div className={styles.narrative}>
-                        <h3>My Narrative: </h3>
-                        <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
+                <motion.section
+                    ref={ref1}
+                    animate={controls1}
+                    initial={{ x: -100, opacity: 0 }}
+                    transition={{ duration: 1 }}
+                    variants={{
+                      visible: { x: 0, opacity: 1 },
+                    }}
+                    >
+                    {!isMobile && <div className={styles.icons}>
+                        {imagesArrayWithStyle}
+                    </div>}
+                    <div className={styles.technologies}>
+                        <h3>Technologies I&apos;ve worked with:</h3>
+                        <p>JavaScript (ES6+), React, Express, NoSQL (MongoDB, Mongoose), HTML5, CSS3, Redux, TypeScript, Git/GitHub flow, WebSockets, Authentication (OAuth 2.0), Node, SQL (PostgreSQL), webpack, Tailwind, React Router, Vite, Next</p>
+                        <br></br>
+                        <h3>Interests:</h3>
+                        <p>🎼 Musician: Had the opportunity to play at Carnegie Hall in middle school!
+                        <br></br>
+                        ⚗️ Science: Hence my degree in Biology! I love learning about  how everything works!
+                        <br></br>
+                        🎮 Gaming: Would love to see what games other people grew up with
+                        </p>
                     </div>
-                    {displayNarrative && <div className={styles.narrative_text}><p style={{lineHeight: '24px', margin: '10px 20px 10px 0px' }}>Discovering Python was a life-changing experience that opened the door to a world of possibilities. It felt as if I were assembling puzzle pieces, creating fascinating projects on my computer that I never imagined possible. My natural inclination to study Python in my spare time confirmed that this was the path I wanted to follow
-                    <br></br>
-                    <br></br>
-                    After researching various career options, I found web development to be the most appealing. Despite my father&apos;s concern that AI might eventually take over the field, my strict Asian parents were supportive when they saw my dedication. They encouraged me to attend a bootcamp, which led me to conduct extensive research before settling on Codesmith. You can find more info <a href='https://www.codesmith.io/' target='_blank'>here</a>.
-                    <br></br>
-                    <br></br>
-                    Before even being admitted to Codesmith, I had already built a dice game using React and React hooks, useState and useEffect. Despite my initial achievements, I knew that there was still so much more to learn. The rigorous selection process at Codesmith, which included multiple interviews and workshops, taught me valuable skills such as object-oriented programming, recursion, and permutations. It is worth noting that many admitted students often have some experience in the field already.
-                    <br></br>
-                    <br></br>
-                    During my time at Codesmith, every single day felt like a new learning opportunity. I quickly learned about Redux, backend development, testing with Jest, and more. After mastering the foundational concepts, we entered the project phase where I worked alongside other developers in a timed environment, often being given just two days to create something cool. It was through this experience that I really got to reinforce my understanding of what it meant to be a full stack developer working in a team. My most notable achievement was contributing to an open-source product with a team of 4 for a couple months, which you can find more about <Link to='experience' smooth={true} style={{cursor: 'pointer', textDecoration: 'underline'}} offset={-120}>here</Link>.
-                    <br></br>
-                    <br></br>
-                    Looking back, I am amazed at how far I&apos;ve come on this journey. However, my passion for coding and learning remains strong. I am eager to explore new areas such as machine learning, game development, and creating tools for others. The future is full of exciting opportunities and I can&apos;t wait to see what&apos;s next!
-                    <br></br>
-                    <br></br>
-                    </p></div>}
-                    <div className={styles.education}>
-                        <h3>🎓 Education:</h3>
-                        <h4>University of California - Riverside</h4>
-                        <p>- Cum Laude (Top 10%) Biology</p>
-                        <p>- Relevant Coursework: Introduction to Computing,
-                            <br></br>
-                            Intro to Statistics, Calculus</p>
-                        <h4>Codesmith</h4>
-                        <p>- Advanced Residency for Software Engineering</p>
+                </motion.section>
+                <motion.section
+                    ref={ref2}
+                    animate={controls2}
+                    initial={{ x: 100, opacity: 0 }}
+                    transition={{ duration: 1 }}
+                    variants={{
+                      visible: { x: 0, opacity: 1 },
+                    }}
+                    >
+                    <div style={{marginTop: '100px'}}>
+                        <div className={styles.narrative}>
+                            <h3>My Narrative: </h3>
+                            <button onClick={()=>setDisplayNarrative(!displayNarrative)}>{displayNarrative ? 'Hide' : 'Display'} Narrative</button>
+                        </div>
+                        {displayNarrative && <div className={styles.narrative_text}><p style={{lineHeight: '24px', margin: '10px 20px 10px 0px' }}>Discovering Python was a life-changing experience that opened the door to a world of possibilities. It felt as if I were assembling puzzle pieces, creating fascinating projects on my computer that I never imagined possible. My natural inclination to study Python in my spare time confirmed that this was the path I wanted to follow
+                        <br></br>
+                        <br></br>
+                        After researching various career options, I found web development to be the most appealing. Despite my father&apos;s concern that AI might eventually take over the field, my strict Asian parents were supportive when they saw my dedication. They encouraged me to attend a bootcamp, which led me to conduct extensive research before settling on Codesmith. You can find more info <a href='https://www.codesmith.io/' target='_blank'>here</a>.
+                        <br></br>
+                        <br></br>
+                        Before even being admitted to Codesmith, I had already built a dice game using React and React hooks, useState and useEffect. Despite my initial achievements, I knew that there was still so much more to learn. The rigorous selection process at Codesmith, which included multiple interviews and workshops, taught me valuable skills such as object-oriented programming, recursion, and permutations. It is worth noting that many admitted students often have some experience in the field already.
+                        <br></br>
+                        <br></br>
+                        During my time at Codesmith, every single day felt like a new learning opportunity. I quickly learned about Redux, backend development, testing with Jest, and more. After mastering the foundational concepts, we entered the project phase where I worked alongside other developers in a timed environment, often being given just two days to create something cool. It was through this experience that I really got to reinforce my understanding of what it meant to be a full stack developer working in a team. My most notable achievement was contributing to an open-source product with a team of 4 for a couple months, which you can find more about <Link to='experience' smooth={true} style={{cursor: 'pointer', textDecoration: 'underline'}} offset={-120}>here</Link>.
+                        <br></br>
+                        <br></br>
+                        Looking back, I am amazed at how far I&apos;ve come on this journey. However, my passion for coding and learning remains strong. I am eager to explore new areas such as machine learning, game development, and creating tools for others. The future is full of exciting opportunities and I can&apos;t wait to see what&apos;s next!
+                        <br></br>
+                        <br></br>
+                        </p></div>}
+                        <div className={styles.education}>
+                            <h3>🎓 Education:</h3>
+                            <h4>University of California - Riverside</h4>
+                            <p>- Cum Laude (Top 10%) Biology</p>
+                            <p>- Relevant Coursework: Introduction to Computing,
+                                <br></br>
+                                Intro to Statistics, Calculus</p>
+                            <h4>Codesmith</h4>
+                            <p>- Advanced Residency for Software Engineering</p>
+                        </div>
                     </div>
-                </div>
-                <div className={styles.images} style={{marginTop: '100px'}}>
-                    <Image src={Self} alt="image of Yohan Jeon" width={200} height={200} className={styles.self}/>
-                    <Image src={Codesmith} alt="Codesmith logo" width={100} height={100} className={styles.codesmith}/>
-                    <Image src={UCR_Logo} alt="UCR logo" width={50} height={50} className={styles.ucr}/>
-                </div>
-                
+                    <motion.div className={styles.images} ref={constraintsRef}>
+                        {!dragged && <p>Drag an image!</p>}
+                        <motion.img 
+                          src='/me.jpg' 
+                          alt="image of Yohan Jeon" 
+                          width={200} 
+                          height={200} 
+                          className={styles.self} 
+                          drag 
+                          dragConstraints={constraintsRef} 
+                          onDragStart={()=>{
+                            if (!dragged)setDragged(true)
+                          }
+                          }/>
+                        <motion.img 
+                          src='/codesmith.png' 
+                          alt="Codesmith logo" 
+                          width={100} 
+                          height={100} 
+                          className={styles.codesmith} 
+                          drag 
+                          dragConstraints={constraintsRef} 
+                          onDragStart={()=>{
+                            if (!dragged)setDragged(true)
+                          }
+                          }/>
+                        <motion.img src='/ucr-logo.png' 
+                          alt="UCR logo" width={100} 
+                          height={100} 
+                          className={styles.ucr} 
+                          drag 
+                          dragConstraints={constraintsRef} 
+                          onDragStart={()=>{
+                            if (!dragged)setDragged(true)
+                          }
+                        }/>
+                    </motion.div>
+                </motion.section>
             </div>
         </div>
     )

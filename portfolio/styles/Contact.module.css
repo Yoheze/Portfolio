@@ -142,12 +142,10 @@
     .form{
         padding-top: 100px;
         padding-bottom: 100px;
-        overflow: scroll;
     }
 
-    .form input{
-        width: 100%;
-        display: block;
+    .input_group{
+        margin-bottom: 30px;
     }
 
     .textarea{

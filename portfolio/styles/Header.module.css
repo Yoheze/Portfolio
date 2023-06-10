@@ -27,10 +27,14 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 480px) {
-    .title h1, .title p{
-        width: 80vw;
-        padding-right: 10vw;
-        padding-left: 10vw;
+@media screen and (max-width: 900px) {
+    .title h1{
+        font-size: 28px;
+    }
+
+    .title p{
+        width: 60vw;
+        padding-right: 20vw;
+        padding-left: 20vw;
     }
 }

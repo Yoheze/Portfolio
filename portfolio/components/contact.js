@@ -3,6 +3,8 @@ import Image from 'next/image'
 import GoogleIcon from '@/public/google.png'
 import { signIn, useSession } from 'next-auth/react';
 import { useState, useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 export default function Contact () {
 
@@ -54,7 +56,7 @@ export default function Contact () {
         console.log(name, email, message)
 
         if (e) e.preventDefault();
-    //   Validate the input fields before sending the data
+    // Validate the input fields before sending the data
         if (!validateName(name)) {
             setErrorMessage('Invalid name. Please only use letters and spaces.');
             return;
@@ -101,7 +103,13 @@ export default function Contact () {
     return (
         <div className={styles.contact} id='contact'>
             <h2>Contact me!</h2>
-            <form className={styles.form} onSubmit={handleSubmit}>
+            <motion.form 
+              className={styles.form} 
+              onSubmit={handleSubmit}
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 3}}
+            >
               <div className={styles.input_group} style={{paddingTop: '30px'}}>
                 <input onChange={(e) => setName(e.target.value)} required></input><label className={styles.user_label}>Name: </label>
               </div>
@@ -126,7 +134,7 @@ export default function Contact () {
                         </svg>
                     </button>
                 </div>
-            </form>
+            </motion.form>
         </div>
     )
 }

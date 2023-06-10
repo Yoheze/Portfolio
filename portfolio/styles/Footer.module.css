@@ -8,7 +8,6 @@
     opacity: 0.97;
     position: fixed;
     bottom: 20px;
-    
 }
 
 .footer{
@@ -75,9 +74,8 @@
     }
 
     .credit{
-        padding: 10px 0 10px 10px;
-        margin-bottom: 7vh;
-        opacity: 0.97;
+        padding-bottom: 10vh;
+        position: static;
         width: 100%;
         background-color: #463F3A;
     }

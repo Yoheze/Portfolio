@@ -15,6 +15,7 @@
     width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
 }
 
 .about *{
@@ -54,6 +55,33 @@
 .images p{
     position: relative;
     right: 30px;
+}
+
+.images{
+    height: 40vh;
+    width: 30vw;
+    border-radius: 10%;
+    margin-top: 200px;
+    border: 3px solid white;
+    overflow: hidden;
+}
+
+.images p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    z-Index: 3;
+    font-size: 20px;
+    color: #9381FF;
+}
+
+.images img:hover{
+    cursor: grab;
+}
+
+.images img:active{
+    cursor: grabbing;
 }
 
 .self{
@@ -151,6 +179,7 @@
 
     .images{
         margin-left: 5vw;
+        width: 80vw;
     }
 
     .icons{

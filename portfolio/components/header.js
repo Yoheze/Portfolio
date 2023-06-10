@@ -1,5 +1,6 @@
 import styles from '@/styles/Header.module.css'
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Header () {
 
@@ -51,7 +52,11 @@ export default function Header () {
     return (
         <div className={styles.background}>
             <div className={styles.title} id='header'>
-                <h1>{typed}</h1>
+                <motion.h1
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 3}}
+                >{typed}</motion.h1>
                 <p>I am a {job} located in the Greater Los Angeles Area</p>
             </div>
         </div>
