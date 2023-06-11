@@ -26,7 +26,7 @@ export default function NavBar () {
             <nav className={styles.navbar}>
                 <Link to='header' smooth={true} offset={0} className={styles.link}>Intro</Link>
                 <Link to='about' smooth={true} offset={50} className={styles.link}>About</Link>
-                <Link to='experience' smooth={true} className={styles.link} offset={200}>Experience</Link>
+                <Link to='experience' smooth={true} className={styles.link} offset={50}>Experience</Link>
                 <Link to='projects' smooth={true} className={styles.link} offset={-100}>Projects</Link>
                 <Link to='contact' smooth={true} className={styles.link} offset={120}>Contact</Link>
             </nav>

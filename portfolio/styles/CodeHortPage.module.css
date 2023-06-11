@@ -9,6 +9,7 @@
     margin-top: -50px;
     padding-bottom: 10vh;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .codehort{
@@ -30,7 +31,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-
     .codehort{
         padding-top: 100px;
     }
@@ -42,9 +42,8 @@
     }
 
     .right{
-        margin-top: 30px;
+        margin-top: 30vh;
     }
-
 
     .codehort li, .codehort h3{
         margin-right: 10vw;

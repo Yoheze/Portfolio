@@ -3,8 +3,7 @@ import Image from 'next/image'
 import GoogleIcon from '@/public/google.png'
 import { signIn, useSession } from 'next-auth/react';
 import { useState, useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 export default function Contact () {
 

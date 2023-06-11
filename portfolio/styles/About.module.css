@@ -71,6 +71,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-18%, -50%);
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black;
     z-Index: 3;
     font-size: 24px;
 }

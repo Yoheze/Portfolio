@@ -64,6 +64,7 @@
 @media screen and (max-width: 1250px) {
     .cover{
         padding: 10vh 10vw;
+        margin-bottom: -51px;
     }
 
     .page h2, .page h3, .narrative, .page li{
