@@ -22,7 +22,7 @@ export default function NavBar () {
 
     if (isMobile) {
         return (
-            <div className={styles.navbarDesign}>
+        <div className={styles.navbarDesign}>
             <nav className={styles.navbar}>
                 <Link to='header' smooth={true} offset={0} className={styles.link}>Intro</Link>
                 <Link to='about' smooth={true} offset={50} className={styles.link}>About</Link>
