@@ -16,6 +16,7 @@ body{
     background-position: center center;
     background-attachment: fixed;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 1250px) {
