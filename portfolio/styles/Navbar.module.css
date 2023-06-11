@@ -36,8 +36,7 @@
 
 @media screen and (max-width: 1250px) {
     .navbarDesign{
-        position: sticky;
-        top:3px;
+        position: fixed;
     }
 
     .navbar{
