@@ -52,7 +52,7 @@
 @media screen and (max-width: 1250px){
     .projects{
         opacity: 0.97;
-        width: 100vw;
+        width: 100%;
         background-color: #463F3A;
         overflow: hidden;
     }

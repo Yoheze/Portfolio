@@ -75,8 +75,10 @@
 
     .credit{
         padding-bottom: 10vh;
+        padding-top: 10px;
         position: static;
         width: 100%;
         background-color: #463F3A;
+        margin-top: -1px;
     }
 }
