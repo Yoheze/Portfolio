@@ -225,8 +225,8 @@ export default function About() {
               ⚗️ Science: Hence my degree in Biology! I love learning about how
               everything works!
               <br></br>
-              🎮 Gaming: I'd love to see what games others grew up with. If
-              you'd like, you can add me; my gamer tag is Yoheze.
+              🎮 Gaming: I&apos;d love to see what games others grew up with. If
+              you&apos;d like, you can add me; my gamer tag is Yoheze.
             </p>
           </div>
         </motion.section>
