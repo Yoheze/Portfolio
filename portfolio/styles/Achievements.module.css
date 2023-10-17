@@ -1,0 +1,24 @@
+.achievements {
+  display: flex;
+  justify-content: center;
+  opacity: 0.97;
+  width: 100vw;
+  height: 50vh;
+  background-color: #463f3a;
+  margin: -1px 0;
+}
+
+.content {
+  width: 60vw;
+}
+
+.talk {
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .content iframe {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,80 +1,102 @@
-.projects *{
-    margin-bottom: 10px;
+.projects * {
+  margin-bottom: 10px;
 }
 
-.projects{
+.projects {
+  opacity: 0.97;
+  width: 100vw;
+  background-color: #463f3a;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 60vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20vh 0;
+  gap: 5vw;
+}
+
+.projects img {
+  box-shadow: 0 0 10px 10px #3943b7;
+}
+
+.projects p {
+  line-height: 24px;
+}
+
+.reactype {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+}
+
+.reacType_Logo {
+  box-shadow: 0 0 10px 10px #3943b7;
+  border-radius: 50%;
+}
+
+.appImage {
+  margin-top: 50px;
+}
+
+.webpage {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+/* Styles for Prifina start here */
+.prifina {
+  margin-top: 10vh;
+}
+
+.prifina_logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.prifina_logos img {
+  box-shadow: none;
+}
+
+.prifina a {
+  text-decoration: underline;
+}
+
+.prifina video {
+  width: 100%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .projects {
     opacity: 0.97;
-    width: 100vw;
-    background-color: #463F3A;
-}
+    width: 100%;
+    background-color: #463f3a;
+    overflow: hidden;
+  }
 
-.grid{
+  .grid {
     margin: 0 auto;
-    width: 60vw;
+    width: 80vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 20vh 0;
-}
+  }
 
-.projects img{
-    box-shadow: 0 0 10px 10px #3943B7;
-}
+  .grid * {
+    width: 80vw;
+  }
 
-.projects p{
-    line-height: 24px;
-}
+  .reacType_Logo {
+    width: 80vw;
+    height: 30vh;
+  }
 
-.reactype{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3vh;
-}
-
-.reacType_Logo{
-    box-shadow: 0 0 10px 10px #3943B7;
-    border-radius: 50%;
-}
-
-.appImage{
-    margin-top: 50px;
-}
-
-.webpage{
-    border: 3px solid black;
-    border-radius: 10px;
-}
-
-.contributions{
-    margin-left: 5vw
-}
-
-@media screen and (max-width: 1250px){
-    .projects{
-        opacity: 0.97;
-        width: 100%;
-        background-color: #463F3A;
-        overflow: hidden;
-    }
-    
-    .grid{
-        margin: 0 auto;
-        width: 80vw;
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 20vh 0;
-    }
-
-    .grid *{
-        width: 80vw;
-    }
-
-    .reacType_Logo{
-        width: 80vw;
-        height: 30vh;
-    }
-
-    .contributions, .contributions li{
-        width: 60vw;
-    }
+  .projects li {
+    width: 60vw;
+  }
 }

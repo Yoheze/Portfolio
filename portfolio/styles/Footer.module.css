@@ -1,85 +1,89 @@
-.wave{
-    background-color: #463F3A;
-    opacity: 0.97;
+.wave {
+  background-color: #463f3a;
+  opacity: 0.97;
+  overflow-y: hidden;
 }
 
-.credit{
-    padding-left: 20px;
-    opacity: 0.97;
-    position: fixed;
-    bottom: 20px;
+.wave svg {
+  margin-bottom: -10px;
 }
 
-.footer{
-    position: fixed;
-    left: 90vw;
-    bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 10vw;
+.credit {
+  padding-left: 20px;
+  opacity: 0.97;
+  position: fixed;
+  bottom: 20px;
 }
 
-.footer svg{
-    fill: white;
-    margin-bottom: 3vh;
-    width: 3vw;
-    height: 3vh;
+.footer {
+  position: fixed;
+  left: 90vw;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
 }
 
-.line{
-    width: 3px;
-    height: 10vh;
-    background-color: white;
+.footer svg {
+  fill: white;
+  margin-bottom: 3vh;
+  width: 3vw;
+  height: 3vh;
 }
 
-.iconName p{
-    position: relative;
-    right: -300px;
-    top: 23px;
-    opacity: 0;
-    width: 50px;
-    transition: all 0.5s ease;
+.line {
+  width: 3px;
+  height: 10vh;
+  background-color: white;
 }
 
-.iconName:hover p{
-    right: 70px;
-    opacity: 1;
+.iconName p {
+  position: relative;
+  right: -300px;
+  top: 23px;
+  opacity: 0;
+  width: 50px;
+  transition: all 0.5s ease;
+}
+
+.iconName:hover p {
+  right: 70px;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1250px) {
+  .line {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
 
-    .line{
-        width: 0;
-        height: 0;
-        background-color: transparent;
-    }
+  .footer {
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    height: 6vh;
+    padding: 1vh 0;
+    background-color: #8a817c;
+  }
 
-    .footer{
-        position: fixed;
-        left: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100vw;
-        height: 6vh;
-        padding: 1vh 0;
-        background-color: #8A817C;
-    }
+  .footer svg {
+    fill: white;
+    margin-bottom: 0;
+    width: 5vw;
+    height: 5vh;
+  }
 
-    .footer svg{
-        fill: white;
-        margin-bottom: 0;
-        width: 5vw;
-        height: 5vh;
-    }
-
-    .credit{
-        padding-bottom: 10vh;
-        padding-top: 10px;
-        position: static;
-        width: 100%;
-        background-color: #463F3A;
-        margin-top: -1px;
-    }
+  .credit {
+    padding-bottom: 10vh;
+    padding-top: 10px;
+    position: static;
+    width: 100%;
+    background-color: #463f3a;
+    margin-top: -1px;
+  }
 }

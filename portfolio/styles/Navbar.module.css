@@ -1,49 +1,88 @@
-.navbarDesign{
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    opacity: 0.95;
+.navbarDesign {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: -1px;
+  z-index: 1;
+  opacity: 0.95;
 }
 
-.navbar{
-    background-color: #8A817C;
-    width: 30vw;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navbarDesign_mobile {
+  display: flex;
+  position: fixed;
+  top: -1px;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.navbarDesign_mobile button {
+  width: 100vw;
+}
+
+.navbar {
+  background-color: #8a817c;
+  width: 40vw;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.navbar_mobile {
+  background-color: #8a817c;
+  width: 100vw;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
 }
 
 .link {
-    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    cursor: pointer;
-}
-  
-.link:hover {
-    box-shadow: 0 0px 5px 5px #9381FF;
-    background-color: #9381FF;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  cursor: pointer;
 }
 
+.link:hover {
+  box-shadow: 0 0px 5px 5px #9381ff;
+  background-color: #9381ff;
+}
 
 .triangle {
-    border-top: 25px solid #8A817C;
-    border-left: 25px solid #8A817C;
-    border-right: 25px solid transparent;
-    border-bottom: 25px solid transparent;
+  width: 0;
+  height: 0;
+  border-top: 25px solid white;
+  border-left: 25px solid white;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+.inner_triangle {
+  position: relative;
+  top: -25px;
+  left: -25px;
+  border-top: 24px solid #8a817c;
+  border-bottom: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-left: 24px solid #8a817c;
+}
+
+.navbarClose {
+  color: red;
 }
 
 @media screen and (max-width: 1250px) {
-    .navbarDesign{
-        position: fixed;
-    }
+  .navbarDesign {
+    position: fixed;
+  }
 
-    .navbar{
-        width: 100vw;
-    }
+  .navbar {
+    width: 100vw;
+  }
 
-    .triangle {
-        border: 0;
-    }
+  .triangle {
+    border: 0;
+  }
 }
