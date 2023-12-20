@@ -96,7 +96,7 @@ export default function Footer() {
         <div className={styles.iconName}>
           <p>Resume</p>
           <a
-            href="https://docs.google.com/document/d/1iCa3inc2RorCAbLoNCs1CHD0Jfv-PxyQQbHCNwG65Cs/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1fmu_ofwZxK0GHQVTKtwyDSh2rC_5f06QMV4HZQ2jeWQ/edit?usp=sharing"
             target="_blank"
           >
             <svg
